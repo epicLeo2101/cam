@@ -6,9 +6,10 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
+    public GameObject headBobbing;
     public Camera playerCamera;
-    public float walkSpeed = 6f;
-    public float runSpeed = 12f;
+    public float walkSpeed = 4f;
+    public float runSpeed = 9f;
     public float gravity = 10f;
     public float lookSpeed = 2f;
     public float lookXLimit = 45f;
@@ -38,6 +39,28 @@ public class PlayerMovement : MonoBehaviour
         float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
+
+
+        // --------- Head Bobbing
+        void StartBobbing()
+        {
+            headBobbing.GetComponent<Animator>().Play("HeadBobbing");
+        }
+
+        void StopBobbing()
+        {
+            headBobbing.GetComponent<Animator>().Play("New State");
+        }
+
+        var _input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        if (_input.magnitude != 0 && Input.GetKey(KeyCode.LeftShift))
+        {
+            StartBobbing();
+        }
+        else
+        {
+            StopBobbing();
+        }
 
 
         // --------- Gravity
