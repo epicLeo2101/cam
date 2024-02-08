@@ -10,12 +10,14 @@ public class PlayerMovement : MonoBehaviour
     private bool isSprinting => canSprint && Input.GetKey(sprintKey);
 
 
-    [Header("Functional Options")]                       //<<<----- Stuff like Interacting, Pick ups, Running, etc....
+    [Header("Functional Options")]                       //<<<----- Stuff like Headbobs, Zooming in, interact, crouch, Running, etc....
     [SerializeField] private bool canSprint = true;
     [SerializeField] private bool canUseHeadbob = true;
+    [SerializeField] private bool canInteract = true;
 
     [Header("Controls")]                                 //<<<----- What inputs must be pressed to do what.
     [SerializeField] private KeyCode sprintKey = KeyCode.LeftShift;
+    [SerializeField] private KeyCode interactKey = KeyCode.Mouse0;
 
     [Header("Movement Parameters")]
     [SerializeField] private float walkSpeed = 3.0f;
@@ -35,6 +37,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float sprintBobAmount = 0.11f;
     private float defaultYPos = 0f;
     private float timer;
+
+    [Header("Interaction")]
+    [SerializeField] private Vector3 interactionRayPoint = default;
+    [SerializeField] private float interactionDistance = default;
+    [SerializeField] private LayerMask interactionLayer = default;
+    private Interractable currentInteractable;
 
 
     private Camera playerCamera;
@@ -67,6 +75,12 @@ public class PlayerMovement : MonoBehaviour
                 HandleHeadbob();
             }
 
+            if (canInteract)
+            {
+                HandleInteractionCheck();
+                HandleInteractionInput();
+            }
+
             ApplyFinalMovements();
         }
      
@@ -85,6 +99,36 @@ public class PlayerMovement : MonoBehaviour
                 playerCamera.transform.localPosition.z);
         }
     }
+
+    //-------------------------------------------- I know it looks confusing but this will allow us to interact with items anyway we like.
+    private void HandleInteractionCheck()
+    {
+        if(Physics.Raycast(playerCamera.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance))
+        {
+            if(hit.collider.gameObject.layer == 6 && (currentInteractable == null || hit.collider.gameObject.GetInstanceID() != currentInteractable.GetInstanceID()))
+            {
+                hit.collider.TryGetComponent(out currentInteractable);
+
+                if (currentInteractable)
+                    currentInteractable.OnFocus();
+            }
+        }
+        else if (currentInteractable)
+        {
+            currentInteractable.OnLoseFocus();
+            currentInteractable = null;
+        }
+    }
+
+    private void HandleInteractionInput()
+    {
+        if (Input .GetKeyDown(interactKey) && currentInteractable != null && Physics.Raycast(playerCamera.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance, interactionLayer))
+        {
+            currentInteractable.OnInteract();
+        }
+    }
+
+    //-----------------------------------------------------------------------
 
     private void HandleMovementInput()
     {

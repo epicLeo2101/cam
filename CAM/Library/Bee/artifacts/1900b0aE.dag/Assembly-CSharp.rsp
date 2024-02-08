@@ -359,6 +359,8 @@
 -analyzer:"D:/Program Files/Unity 2022.3.5f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/Program Files/Unity 2022.3.5f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scipts/Controller.cs"
+"Assets/Scipts/Interractable.cs"
+"Assets/Scipts/TestInteractable.cs"
 -langversion:9.0
 
 /deterministic
