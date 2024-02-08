@@ -3,81 +3,113 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[RequireComponent(typeof(CharacterController))]
+//[RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
-    public GameObject headBobbing;
-    public Camera playerCamera;
-    public float walkSpeed = 4f;
-    public float runSpeed = 9f;
-    public float gravity = 10f;
-    public float lookSpeed = 2f;
-    public float lookXLimit = 45f;
+    public bool CanMove { get; private set; } = true;
+    private bool isSprinting => canSprint && Input.GetKey(sprintKey);
 
-    private Vector3 moveDirection = Vector3.zero;
-    private float rotationX = 0;
+
+    [Header("Functional Options")]                       //<<<----- Stuff like Interacting, Pick ups, Running, etc....
+    [SerializeField] private bool canSprint = true;
+    [SerializeField] private bool canUseHeadbob = true;
+
+    [Header("Controls")]                                 //<<<----- What inputs must be pressed to do what.
+    [SerializeField] private KeyCode sprintKey = KeyCode.LeftShift;
+
+    [Header("Movement Parameters")]
+    [SerializeField] private float walkSpeed = 3.0f;
+    [SerializeField] private float sprintSpeed = 6.0f;
+    [SerializeField] private float gravity = 30.0f;
+
+    [Header("Look Parameters")]
+    [SerializeField, Range(1, 10)] private float lookSpeedX = 2.0f;
+    [SerializeField, Range(1, 10)] private float lookSpeedY = 2.0f;
+    [SerializeField, Range(1, 180)] private float upperLookLimit = 80.0f;
+    [SerializeField, Range(1, 180)] private float lowerLookLimit = 80.0f;
+
+    [Header("Headbob Parameters")]
+    [SerializeField] private float walkBobSpeed = 14f;
+    [SerializeField] private float walkBobAmount = 0.05f;
+    [SerializeField] private float sprintBobSpeed = 18f;
+    [SerializeField] private float sprintBobAmount = 0.11f;
+    private float defaultYPos = 0f;
+    private float timer;
+
+
+    private Camera playerCamera;
     private CharacterController characterController;
 
-    private bool canMove = true;
+    private Vector3 moveDirection;
+    private Vector2 currentInput;
 
-    void Start()
+    private float rotationX = 0;
+
+    void Awake()
     {
-        // --------- Remove Cursor
+        playerCamera = GetComponentInChildren<Camera>();
         characterController = GetComponent<CharacterController>();
+        defaultYPos = playerCamera.transform.localPosition.y;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
     void Update()
     {
-        // --------- Movement/Run
-        Vector3 forward = transform.TransformDirection(Vector3.forward);
-        Vector3 right = transform.TransformDirection(Vector3.right);
 
-        bool isRunning = Input.GetKey(KeyCode.LeftShift);
-        float curSpeedX = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Vertical") : 0;
-        float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;
-        float movementDirectionY = moveDirection.y;
-        moveDirection = (forward * curSpeedX) + (right * curSpeedY);
-
-
-        // --------- Head Bobbing
-        void StartBobbing()
+        if (CanMove)
         {
-            headBobbing.GetComponent<Animator>().Play("HeadBobbing");
-        }
+            HandleMovementInput();
+            HandleMouseLook();
 
-        void StopBobbing()
+            if (canUseHeadbob)
+            {
+                HandleHeadbob();
+            }
+
+            ApplyFinalMovements();
+        }
+     
+    }
+
+    private void HandleHeadbob()
+    {
+        if (!characterController.isGrounded) return;
+
+        if (Mathf.Abs(moveDirection.x) > 0.1f || Mathf.Abs(moveDirection.z) > 0.1f)
         {
-            headBobbing.GetComponent<Animator>().Play("New State");
+            timer += Time.deltaTime * (isSprinting ? sprintBobSpeed : walkBobSpeed);
+            playerCamera.transform.localPosition = new Vector3(
+                playerCamera.transform.localPosition.x,
+                defaultYPos + Mathf.Sin(timer) * (isSprinting ? sprintBobAmount : walkBobAmount),
+                playerCamera.transform.localPosition.z);
         }
+    }
 
-        var _input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        if (_input.magnitude != 0 && Input.GetKey(KeyCode.LeftShift))
-        {
-            StartBobbing();
-        }
-        else
-        {
-            StopBobbing();
-        }
+    private void HandleMovementInput()
+    {
+        currentInput = new Vector2((isSprinting ? sprintSpeed : walkSpeed) * Input.GetAxis("Vertical"), (isSprinting ? sprintSpeed : walkSpeed) * Input.GetAxis("Horizontal"));
 
+        float moveDirectionY = moveDirection.y;
+        moveDirection = (transform.TransformDirection(Vector3.forward) * currentInput.x) + (transform.TransformDirection(Vector3.right) * currentInput.y);
+        moveDirection = moveDirection.normalized * Mathf.Clamp(moveDirection.magnitude, 0, (isSprinting ? sprintSpeed : walkSpeed));  // <<<----- going diognal will stay the same speed.
+        moveDirection.y = moveDirectionY;
+    }
 
-        // --------- Gravity
+    private void HandleMouseLook()
+    {
+        rotationX -= Input.GetAxis("Mouse Y") * lookSpeedY;
+        rotationX = Mathf.Clamp(rotationX, -upperLookLimit, lowerLookLimit);
+        playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
+        transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeedX, 0);
+    }
+
+    private void ApplyFinalMovements()
+    {
         if (!characterController.isGrounded)
-        {
             moveDirection.y -= gravity * Time.deltaTime;
-        }
 
-        // --------- Camera movement
         characterController.Move(moveDirection * Time.deltaTime);
-
-        if (canMove)
-        {
-            rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
-            rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
-            playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
-        }
+        
     }
 }
