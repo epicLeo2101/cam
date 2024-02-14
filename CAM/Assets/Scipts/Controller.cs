@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Controls")]                                 //<<<----- What inputs must be pressed to do what.
     [SerializeField] private KeyCode sprintKey = KeyCode.LeftShift;
-    [SerializeField] private KeyCode interactKey = KeyCode.Mouse0;
+    [SerializeField] private KeyCode interactKey = KeyCode.E;
 
     [Header("Movement Parameters")]
     [SerializeField] private float walkSpeed = 3.0f;

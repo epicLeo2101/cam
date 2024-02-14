@@ -59,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scipts\Interractable.cs" />
-    <Compile Include="Assets\Scipts\TestInteractable.cs" />
+    <Compile Include="Assets\Scipts\InteractableObject.cs" />
     <Compile Include="Assets\Scipts\Controller.cs" />
   </ItemGroup>
   <ItemGroup>
