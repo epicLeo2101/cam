@@ -52,13 +52,14 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 currentInput;
 
     private float rotationX = 0;
+    private float rotationY = 0;
 
     void Awake()
     {
         playerCamera = GetComponentInChildren<Camera>();
         characterController = GetComponent<CharacterController>();
         defaultYPos = playerCamera.transform.localPosition.y;
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
