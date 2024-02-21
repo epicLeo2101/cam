@@ -22,6 +22,7 @@ public class MouseCursor : MonoBehaviour
         {
             playerMovement.enabled = true;
             GetComponent<MouseCursor>().enabled = false;
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-//[RequireComponent(typeof(CharacterController))]
+[RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
     public bool CanMove { get; private set; } = true;
@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField, Range(1, 180)] private float upperLookLimit = 80.0f;
     [SerializeField, Range(1, 180)] private float lowerLookLimit = 80.0f;
 
+
     [Header("Headbob Parameters")]
     [SerializeField] private float walkBobSpeed = 14f;
     [SerializeField] private float walkBobAmount = 0.05f;
@@ -52,14 +53,16 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 currentInput;
 
     private float rotationX = 0;
-    private float rotationY = 0;
+
+    private float rotY = 0.0f;
+    private float rotX = 0.0f;
 
     void Awake()
     {
         playerCamera = GetComponentInChildren<Camera>();
         characterController = GetComponent<CharacterController>();
         defaultYPos = playerCamera.transform.localPosition.y;
-        //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
@@ -143,10 +146,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleMouseLook()
     {
-        rotationX -= Input.GetAxis("Mouse Y") * lookSpeedY;
-        rotationX = Mathf.Clamp(rotationX, -upperLookLimit, lowerLookLimit);
-        playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-        transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeedX, 0);
+        rotationX -= Input.GetAxis("Mouse Y") * lookSpeedY;//Movement left and right.
+        rotationX = Mathf.Clamp(rotationX, -upperLookLimit, lowerLookLimit); //Rotation limit from up and down
+        playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);//Movement left and right but not up or down
+        transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeedX, 0); //Reason why you move left and righ
     }
 
     private void ApplyFinalMovements()

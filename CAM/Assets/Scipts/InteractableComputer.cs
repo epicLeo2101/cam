@@ -25,6 +25,7 @@ public class InteractableComputer : Interractable
         showPressE.SetActive(false);
         playerMovement.enabled = false;
         mouseCursor.enabled = true;
+        Cursor.lockState = CursorLockMode.None;
         print("Interacted with " + gameObject.name);
         //gameObject.layer = 0;
     }

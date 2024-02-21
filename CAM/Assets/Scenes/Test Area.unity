@@ -511,10 +511,9 @@ MonoBehaviour:
   walkSpeed: 3
   sprintSpeed: 6
   gravity: 10
-  lookSpeedX: 2
-  lookSpeedY: 2
-  upperLookLimit: 80
-  lowerLookLimit: 80
+  lookSpeed: 100
+  clampHorizontalAngle: 360
+  clampVerticalAngle: 90
   walkBobSpeed: 14
   walkBobAmount: 0.05
   sprintBobSpeed: 18
