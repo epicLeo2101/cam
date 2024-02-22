@@ -359,6 +359,7 @@
 -analyzer:"D:/Program Files/Unity 2022.3.5f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/Program Files/Unity 2022.3.5f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scipts/Camera Controller.cs"
+"Assets/Scipts/CameraSwitch.cs"
 "Assets/Scipts/Controller.cs"
 "Assets/Scipts/InteractableComputer.cs"
 "Assets/Scipts/InteractableObject.cs"

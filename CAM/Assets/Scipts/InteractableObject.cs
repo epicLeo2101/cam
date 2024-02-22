@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class InteractableObject : Interractable
 {
-    private GameObject pressE;
 
     private void Start()
     {
-        pressE = GameObject.Find("Canvas");
-        pressE.SetActive(false);
     }
 
     public override void OnFocus()
     {
-        pressE.SetActive(true);
         print("Looking at " + gameObject.name);
     }
 
@@ -25,7 +21,6 @@ public class InteractableObject : Interractable
 
     public override void OnLoseFocus()
     {
-        pressE.SetActive(false);
         print("Stop looking at " + gameObject.name);
     }
 }

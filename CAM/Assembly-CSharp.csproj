@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scipts\InteractableComputer.cs" />
     <Compile Include="Assets\Scipts\Interractable.cs" />
     <Compile Include="Assets\Scipts\MouseCursor.cs" />
+    <Compile Include="Assets\Scipts\CameraSwitch.cs" />
     <Compile Include="Assets\Scipts\Camera Controller.cs" />
     <Compile Include="Assets\Scipts\InteractableObject.cs" />
     <Compile Include="Assets\Scipts\Controller.cs" />
