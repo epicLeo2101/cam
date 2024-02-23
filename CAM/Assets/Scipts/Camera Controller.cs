@@ -109,8 +109,8 @@ public class CameraMovement : MonoBehaviour
             rotY = Mathf.Clamp(rotY, -clampHorizontalAngle, clampHorizontalAngle);
 
             //forces player body movement alongside the camera
-            Quaternion localRotation = Quaternion.Euler(rotX, rotY, 0.0f);
-            transform.rotation = localRotation;
+            playerCamera.transform.localRotation = Quaternion.Euler(rotX, rotY, 0.0f); // This is the cause why it is inverted. now you need to figure out how to change that.
+            //transform.rotation = localRotation; //This may be usefull plus "Quaternion localRotation" may need to replace the start of line 112
         }
     }
 }
