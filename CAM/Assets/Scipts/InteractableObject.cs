@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class InteractableObject : Interractable
 {
+    private MeshRenderer objectApperance;
 
     private void Start()
     {
+        objectApperance = GetComponent<MeshRenderer>();
     }
 
     public override void OnFocus()
@@ -16,6 +18,7 @@ public class InteractableObject : Interractable
 
     public override void OnInteract()
     {
+        objectApperance.enabled = !objectApperance.enabled;
         print("Interacted with " + gameObject.name);
     }
 

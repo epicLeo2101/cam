@@ -10,14 +10,22 @@ public class CameraMovement : MonoBehaviour
 
     [Header("Functional Options")]                       //<<<----- Stuff like Headbobs, Zooming in, interact, crouch, Running, etc....
     [SerializeField] private bool canInteract = true;
+    [SerializeField] private bool canZoom = true;
 
     [Header("Controls")]                                 //<<<----- What inputs must be pressed to do what.
     [SerializeField] private KeyCode interactKey = KeyCode.E;
+    [SerializeField] private KeyCode zoomKey = KeyCode.Mouse1;
 
     [Header("Look Parameters")]
     [SerializeField, Range(1, 200)] private float lookSpeed = 100.0f;
     [SerializeField, Range(1, 360)] private float clampHorizontalAngle = 180f;
     [SerializeField, Range(1, 180)] private float clampVerticalAngle = 180f;
+
+    [Header("Zoom Parameters")]
+    [SerializeField] private float timeToZoom = 0.3f;
+    [SerializeField] private float zoomFOV = 30f;
+    private float defaultFOV;
+    private Coroutine zoomRoutine;
 
     [Header("Interaction")]
     [SerializeField] private Vector3 interactionRayPoint = default;
@@ -41,6 +49,7 @@ public class CameraMovement : MonoBehaviour
     {
         playerCamera = GetComponentInChildren<Camera>();
         characterController = GetComponent<CharacterController>();
+        defaultFOV = playerCamera.fieldOfView;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -56,6 +65,11 @@ public class CameraMovement : MonoBehaviour
             {
                 HandleInteractionCheck();
                 HandleInteractionInput();
+            }
+
+            if (canZoom)
+            {
+                HandleZoom(); 
             }
         }
      
@@ -112,5 +126,47 @@ public class CameraMovement : MonoBehaviour
             playerCamera.transform.localRotation = Quaternion.Euler(rotX, rotY, 0.0f); // This is the cause why it is inverted. now you need to figure out how to change that.
             //transform.rotation = localRotation; //This may be usefull plus "Quaternion localRotation" may need to replace the start of line 112
         }
+    }
+
+    private void HandleZoom()
+    {
+        if(Input.GetKeyDown(zoomKey))
+        {
+            if(zoomRoutine != null)
+            {
+                StopCoroutine(zoomRoutine);
+                zoomRoutine = null;
+            }
+
+            zoomRoutine = StartCoroutine(ToggleZoom(true));
+        }
+
+        if (Input.GetKeyUp(zoomKey))
+        {
+            if (zoomRoutine != null)
+            {
+                StopCoroutine(zoomRoutine);
+                zoomRoutine = null;
+            }
+
+            zoomRoutine = StartCoroutine(ToggleZoom(false));
+        }
+    }
+
+    private IEnumerator ToggleZoom(bool isEnter)
+    {
+        float targetFOV = isEnter ? zoomFOV : defaultFOV;
+        float startingFOV = playerCamera.fieldOfView;
+        float timeElapse = 0;
+
+        while (timeElapse < timeToZoom)
+        {
+            playerCamera.fieldOfView = Mathf.Lerp(startingFOV, targetFOV, timeElapse / timeToZoom);
+            timeElapse += Time.deltaTime;
+            yield return null;
+        }
+
+        playerCamera.fieldOfView = targetFOV;
+        zoomRoutine = null;
     }
 }
