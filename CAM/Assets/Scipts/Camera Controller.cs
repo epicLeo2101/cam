@@ -112,9 +112,6 @@ public class CameraMovement : MonoBehaviour
         float mouseY = -Input.GetAxis("Mouse Y");
         if (mouseX != 0 || mouseY != 0)
         {
-
-
-
             rotY += mouseX * lookSpeed * Time.deltaTime;
             rotX += mouseY * lookSpeed * Time.deltaTime;
 
@@ -123,7 +120,7 @@ public class CameraMovement : MonoBehaviour
             rotY = Mathf.Clamp(rotY, -clampHorizontalAngle, clampHorizontalAngle);
 
             //forces player body movement alongside the camera
-            playerCamera.transform.localRotation = Quaternion.Euler(rotX, rotY, 0.0f); // This is the cause why it is inverted. now you need to figure out how to change that.
+            playerCamera.transform.localRotation = Quaternion.Euler(rotX, rotY, 0.0f);
             //transform.rotation = localRotation; //This may be usefull plus "Quaternion localRotation" may need to replace the start of line 112
         }
     }

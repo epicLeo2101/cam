@@ -511,9 +511,10 @@ MonoBehaviour:
   walkSpeed: 3
   sprintSpeed: 6
   gravity: 10
-  lookSpeed: 100
-  clampHorizontalAngle: 360
-  clampVerticalAngle: 90
+  lookSpeedX: 2
+  lookSpeedY: 2
+  upperLookLimit: 80
+  lowerLookLimit: 80
   walkBobSpeed: 14
   walkBobAmount: 0.05
   sprintBobSpeed: 18
@@ -2319,7 +2320,7 @@ Transform:
   m_GameObject: {fileID: 1551177502}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

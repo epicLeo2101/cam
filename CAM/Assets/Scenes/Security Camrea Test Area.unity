@@ -7955,7 +7955,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.5, y: 23}
+  m_AnchoredPosition: {x: -20.5, y: 26}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1416013444 stripped
@@ -8174,7 +8174,7 @@ MonoBehaviour:
   canZoom: 1
   interactKey: 101
   zoomKey: 324
-  lookSpeed: 20
+  lookSpeed: 35
   clampHorizontalAngle: 20
   clampVerticalAngle: 20
   timeToZoom: 0.3
@@ -9242,7 +9242,7 @@ RectTransform:
   m_GameObject: {fileID: 1764205315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7.5, y: 9, z: 1}
+  m_LocalScale: {x: 16, y: 13, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 409220871}
@@ -10756,12 +10756,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '             ''E'': Interact
+  m_text: '    Press ''E'': Interact
 
     Right-Click: Zoom
 
     Space-Bar: Play
-    Alan''s Recording'
+    Alan''s Recording
+
+    Change Cameras: A or D
+
+
+    Goal: Alan must survive'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10824,7 +10829,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -19.182451, w: -5.5577307}
+  m_margin: {x: 0, y: 0, z: -39.347088, w: -5.5577307}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
