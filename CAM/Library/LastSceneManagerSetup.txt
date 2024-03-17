@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-sceneSetups: []
-=======
 sceneSetups:
 - path: Assets/Scenes/Security Camrea Test Area.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
->>>>>>> parent of a233d7b2 (Merge branch 'main' of https://github.com/epicLeo2101/cam)
