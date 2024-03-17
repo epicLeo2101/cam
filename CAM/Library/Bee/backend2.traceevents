@@ -1,5 +1,6 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
 <<<<<<< HEAD
+<<<<<<< HEAD
 ,{ "pid":12345, "tid":0, "ts":1710440273340526, "dur":112554, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1710440273453085, "dur":4930, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1710440273458125, "dur":520, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
@@ -423,6 +424,8 @@
 ,{ "pid":12345, "tid":8, "ts":1710440277672796, "dur":265, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1710440277679483, "dur":2526, "ph":"X", "name": "ProfilerWriteOutput" }
 =======
+=======
+>>>>>>> parent of a233d7b2 (Merge branch 'main' of https://github.com/epicLeo2101/cam)
 ,{ "pid":12345, "tid":0, "ts":1709858295513380, "dur":58825, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1709858295572213, "dur":313, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1709858295572614, "dur":62, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
@@ -888,5 +891,8 @@
 ,{ "pid":12345, "tid":8, "ts":1709858295646378, "dur":6790, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":8, "ts":1709858295653168, "dur":323541, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1709858295982470, "dur":2691, "ph":"X", "name": "ProfilerWriteOutput" }
+<<<<<<< HEAD
+>>>>>>> parent of a233d7b2 (Merge branch 'main' of https://github.com/epicLeo2101/cam)
+=======
 >>>>>>> parent of a233d7b2 (Merge branch 'main' of https://github.com/epicLeo2101/cam)
 ,
