@@ -371,6 +371,7 @@
 "Assets/Scipts/Interactable Scripts/InteractableComputer.cs"
 "Assets/Scipts/Interactable Scripts/InteractableObject.cs"
 "Assets/Scipts/Interactable Scripts/Interractable.cs"
+"Assets/Scipts/LoadNextLevel.cs"
 "Assets/Scipts/MouseCursor.cs"
 "Assets/Scipts/UniversalTrigger.cs"
 -langversion:9.0

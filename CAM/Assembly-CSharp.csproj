@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scipts\Interactable Scripts\Interactable Physics.cs" />
     <Compile Include="Assets\Prefabs\Keypad\Scripts\KeypadButton.cs" />
     <Compile Include="Assets\Scipts\Interactable Scripts\InteractableObject.cs" />
+    <Compile Include="Assets\Scipts\LoadNextLevel.cs" />
     <Compile Include="Assets\Scipts\Interactable Scripts\Interactable Puzzle.cs" />
     <Compile Include="Assets\Prefabs\Keypad\Scripts\Keypad.cs" />
     <Compile Include="Assets\Scipts\AlanState.cs" />

@@ -5,13 +5,16 @@ using UnityEngine;
 public class InteractableComputer : Interractable
 {
     private GameObject showPressE;
+    private GameObject showPressQ;
     public MouseCursor mouseCursor;
     public PlayerMovement playerMovement;
 
     private void Start()
     {
-        showPressE = GameObject.Find("Canvas");
+        showPressE = GameObject.Find("Button Promnt: press E");
+        showPressQ = GameObject.Find("Button Promnt: press Q");
         showPressE.SetActive(false);
+        showPressQ.SetActive(false);
     }
 
     public override void OnFocus()
@@ -23,6 +26,7 @@ public class InteractableComputer : Interractable
     public override void OnInteract()
     {
         showPressE.SetActive(false);
+        showPressQ.SetActive(true);
         playerMovement.enabled = false;
         mouseCursor.enabled = true;
         Cursor.lockState = CursorLockMode.None;
