@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class LoadNextLevel : MonoBehaviour
 {
     private bool readyForNextLevel = false;
+    private float waitToLoad = 3f;
 
     public int levelNum;
 
@@ -21,6 +22,7 @@ public class LoadNextLevel : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0) && readyForNextLevel == true)
         {
             SceneManager.LoadScene(levelNum);
+            readyForNextLevel = false;
         }
     }
 
@@ -31,6 +33,12 @@ public class LoadNextLevel : MonoBehaviour
             Debug.Log("It Works!");
             readyForNextLevel = true;
         }
+
+        if (collider.gameObject.name == "Alan")
+        {
+            Debug.Log("Its going to load in 3s!");
+            StartCoroutine(WaitToLoad());
+        }
     }
 
     private void OnTriggerExit(Collider collider)
@@ -40,5 +48,11 @@ public class LoadNextLevel : MonoBehaviour
             readyForNextLevel = false;
             Debug.Log("It Left!");
         }
+    }
+
+    private IEnumerator WaitToLoad()
+    { 
+        yield return new WaitForSeconds(waitToLoad);
+        SceneManager.LoadScene(levelNum);
     }
 }
