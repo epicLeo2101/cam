@@ -44,6 +44,16 @@ public class AlanState : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider collider)
+    {
+        if (collider.gameObject.tag == "Essential")
+        {
+            m_Animator.SetTrigger("Stop");
+            objectApperance.enabled = false;
+            Debug.Log("It works");
+        }
+    }
+
     private IEnumerator CoolDown()
     {
         isCoolDown = true;
