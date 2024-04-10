@@ -365,12 +365,24 @@
 "Assets/Scipts/AlanState.cs"
 "Assets/Scipts/Camera Controller.cs"
 "Assets/Scipts/CameraSwitch.cs"
+<<<<<<< HEAD
 "Assets/Scipts/Controller.cs"
+=======
+"Assets/Scipts/ChangeToLoreWindow.cs"
+"Assets/Scipts/ChangeToMainWindow.cs"
+"Assets/Scipts/Controller.cs"
+"Assets/Scipts/DontDestroy.cs"
+"Assets/Scipts/Interactable Scripts/Collectable.cs"
+>>>>>>> parent of beb8a4b2 (Deleted Caches)
 "Assets/Scipts/Interactable Scripts/Interactable Physics.cs"
 "Assets/Scipts/Interactable Scripts/Interactable Puzzle.cs"
 "Assets/Scipts/Interactable Scripts/InteractableComputer.cs"
 "Assets/Scipts/Interactable Scripts/InteractableObject.cs"
 "Assets/Scipts/Interactable Scripts/Interractable.cs"
+<<<<<<< HEAD
+=======
+"Assets/Scipts/LevelUnlocked.cs"
+>>>>>>> parent of beb8a4b2 (Deleted Caches)
 "Assets/Scipts/LoadNextLevel.cs"
 "Assets/Scipts/MouseCursor.cs"
 "Assets/Scipts/UniversalTrigger.cs"

@@ -339,7 +339,10 @@ m_ResolvedPackages:
     - 5.2.2
     - 6.0.1-pre.1
     - 6.0.1-pre.2
+<<<<<<< HEAD
     - 6.0.1
+=======
+>>>>>>> parent of beb8a4b2 (Deleted Caches)
     compatible:
     - 5.1.0
     - 5.1.1

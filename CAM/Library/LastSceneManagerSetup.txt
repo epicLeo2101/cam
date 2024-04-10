@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Security Camrea Test Area.unity
+=======
+- path: Assets/Scenes/Test Area.unity
+>>>>>>> parent of beb8a4b2 (Deleted Caches)
   isLoaded: 1
   isActive: 1
   isSubScene: 0
