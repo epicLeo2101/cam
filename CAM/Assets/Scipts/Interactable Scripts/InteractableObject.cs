@@ -55,7 +55,11 @@ public class InteractableObject : Interractable
 
     public override void OnFocus()
     {
-        hoverLight.enabled = true;
+        if (objectApperance.enabled == false)
+        {
+            hoverLight.enabled = true;
+        }
+        //hoverLight.enabled = true;
         print("Looking at " + gameObject.name);
     }
 
@@ -67,6 +71,10 @@ public class InteractableObject : Interractable
 
     public override void OnLoseFocus()
     {
+        if (objectApperance.enabled == false)
+        {
+            hoverLight.enabled = false;
+        }
         hoverLight.enabled = false;
         print("Stop looking at " + gameObject.name);
     }
