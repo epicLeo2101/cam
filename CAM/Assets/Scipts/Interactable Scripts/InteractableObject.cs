@@ -10,12 +10,15 @@ public class InteractableObject : Interractable
     private MeshRenderer objectApperance;
     private Light hoverLight;
 
+    public GameObject Hologram;
+
     private void Start()
     {
         hoverLight = GetComponentInChildren<Light>();
         objectApperance = GetComponent<MeshRenderer>();
 
         //hoverLight.enabled = false;
+        //hologramApperance.enabled = false;
 
         if (this.tag == "Essential")
         {
@@ -33,10 +36,12 @@ public class InteractableObject : Interractable
         if (objectApperance.enabled == true && Death == true)
         {
             GetComponent<Collider>().isTrigger = true;
+            Hologram.SetActive(false);
         }
         if (objectApperance.enabled == false && Death == true)
         {
             GetComponent<Collider>().isTrigger = false;
+            Hologram.SetActive(true);
             //hoverLight.enabled = false;
         }
 
@@ -45,11 +50,13 @@ public class InteractableObject : Interractable
         if (objectApperance.enabled == false && Essential == true)
         {
             GetComponent<Collider>().isTrigger = true;
+            Hologram.SetActive(true);
             //hoverLight.enabled = false;
         }
         if (objectApperance.enabled == true && Essential == true)
         {
             GetComponent<Collider>().isTrigger = false;
+            Hologram.SetActive(false);
         }
     }
 
@@ -66,6 +73,7 @@ public class InteractableObject : Interractable
     public override void OnInteract()
     {
         objectApperance.enabled = !objectApperance.enabled;
+        
         print("Interacted with " + gameObject.name);
     }
 
