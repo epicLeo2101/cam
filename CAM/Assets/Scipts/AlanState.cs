@@ -13,9 +13,12 @@ public class AlanState : MonoBehaviour
     private MeshRenderer objectApperance;
     private Animator m_Animator;
 
+    CheckPoint checkPointReach;
+
     // Start is called before the first frame update
     void Start()
     {
+        //checkPointReach = GameObject.FindGameObjectsWithTag
         m_Animator = GetComponent<Animator>();
         objectApperance = GetComponent<MeshRenderer>();
     }
@@ -42,6 +45,12 @@ public class AlanState : MonoBehaviour
             objectApperance.enabled = false;
             Debug.Log("It works");
         }
+
+        //if (collider.gameObject.tag == "CheckPoint")
+        //{
+        //    checkPointReach.CheckPointReach();
+        //    Debug.Log("Check Point!");
+        //}
     }
 
     private void OnTriggerExit(Collider collider)

@@ -234,7 +234,7 @@ GameObject:
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &11417090
 Transform:
   m_ObjectHideFlags: 0
@@ -2223,7 +2223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &538750883
 Transform:
   m_ObjectHideFlags: 0
@@ -6535,7 +6535,7 @@ GameObject:
   - component: {fileID: 1298749433}
   - component: {fileID: 1298749434}
   m_Layer: 0
-  m_Name: All Cameras
+  m_Name: Section 1 Cameras (all)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9519,7 +9519,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1665153160
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -71,6 +71,7 @@
     <Compile Include="Assets\Prefabs\Keypad\Scripts\KeypadInteractionFPV.cs" />
     <Compile Include="Assets\Prefabs\Keypad\Scripts\SlidingDoor.cs" />
     <Compile Include="Assets\Scipts\MouseCursor.cs" />
+    <Compile Include="Assets\Scipts\CheckPoint.cs" />
     <Compile Include="Assets\Scipts\CameraSwitch.cs" />
     <Compile Include="Assets\Scipts\Interactable Scripts\Interractable.cs" />
     <Compile Include="Assets\Scipts\UniversalTrigger.cs" />
