@@ -40,7 +40,7 @@ public class CameraMovement : MonoBehaviour
     private Camera playerCamera;
     private CharacterController characterController;
 
-    public GameObject staticEffect;
+    //public GameObject staticEffect; <<<<<<<<<<<------- REMOVE THE COMMENT!!!!!! 
 
     private Vector3 moveDirection;
     private Vector2 currentInput;
@@ -80,11 +80,11 @@ public class CameraMovement : MonoBehaviour
             }
         }
 
-        if (this.gameObject.activeSelf)
-        {
-            StartCoroutine(DisableStatic());
-        }
-     
+        //if (this.gameObject.activeSelf) <<<<<<<<<<<------- REMOVE THE COMMENT!!!!!! 
+        //{
+        //    StartCoroutine(DisableStatic());
+        //}
+
     }
 
     //-------------------------------------------- I know it looks confusing but this will allow us to interact with items anyway we like.
@@ -179,12 +179,12 @@ public class CameraMovement : MonoBehaviour
         zoomRoutine = null;
     }
 
-    public IEnumerator DisableStatic()
-    {
-        // Wait for the specified delay
-        yield return new WaitForSeconds(disableStaticIn);
+    //public IEnumerator DisableStatic()   <<<<<<<<<<<------- REMOVE THE COMMENT!!!!!! 
+    //{
+    //    // Wait for the specified delay
+    //    yield return new WaitForSeconds(disableStaticIn);
 
-        // Disable the GameObject
-        staticEffect.SetActive(false);
-    }
+    //    // Disable the GameObject
+    //    staticEffect.SetActive(false);
+    //}
 }

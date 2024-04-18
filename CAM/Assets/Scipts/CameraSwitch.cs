@@ -15,12 +15,11 @@ public class CameraSwitch : MonoBehaviour
     private bool isCoolDown = false;
     private int currentCameraIndex;
 
-    CameraMovement cameraMovement;
+    //CameraMovement cameraMovement;    <<<<<<<<<<<------- REMOVE THE COMMENT!!!!!! 
 
     // Start is called before the first frame update
     private void Awake()
     {
-        //cameraMovement = GetComponentInChildren<CameraMovement>();
         FindCameras();
         UpdateCurrentCam();
     }
@@ -28,20 +27,20 @@ public class CameraSwitch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cameraMovement = GetComponentInChildren<CameraMovement>();
+        //cameraMovement = GetComponentInChildren<CameraMovement>(); <<<<<<<<<<<------- REMOVE THE COMMENT!!!!!! 
 
         if (Input.GetKey(switchRight) && !isCoolDown)
         {
             SwitchToRight();
             StartCoroutine(CoolDown());
-            cameraMovement.staticEffect.SetActive(true);
+            //cameraMovement.staticEffect.SetActive(true); <<<<<<<<<<<------- REMOVE THE COMMENT!!!!!! 
         }
 
         if (Input.GetKey(switchLeft) && !isCoolDown)
         {
             SwitchToLeft();
             StartCoroutine(CoolDown());
-            cameraMovement.staticEffect.SetActive(true);
+            //cameraMovement.staticEffect.SetActive(true); <<<<<<<<<<<------- REMOVE THE COMMENT!!!!!! 
         }
     }
 
