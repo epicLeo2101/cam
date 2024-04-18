@@ -18,7 +18,7 @@ public class AlanState : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //checkPointReach = GameObject.FindGameObjectsWithTag
+        checkPointReach = GameObject.FindGameObjectWithTag("Sections").GetComponent<CheckPoint>();
         m_Animator = GetComponent<Animator>();
         objectApperance = GetComponent<MeshRenderer>();
     }
@@ -37,7 +37,7 @@ public class AlanState : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider collider)
+    public void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.tag == "Death")
         {
@@ -46,14 +46,14 @@ public class AlanState : MonoBehaviour
             Debug.Log("It works");
         }
 
-        //if (collider.gameObject.tag == "CheckPoint")
-        //{
-        //    checkPointReach.CheckPointReach();
-        //    Debug.Log("Check Point!");
-        //}
+        if (collider.gameObject.tag == "CheckPoint")
+        {
+            checkPointReach.CheckPointReach();
+            Debug.Log("Check Point!");
+        }
     }
 
-    private void OnTriggerExit(Collider collider)
+    public void OnTriggerExit(Collider collider)
     {
         if (collider.gameObject.tag == "Essential")
         {

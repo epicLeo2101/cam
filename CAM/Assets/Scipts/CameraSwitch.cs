@@ -8,7 +8,6 @@ public class CameraSwitch : MonoBehaviour
     [SerializeField] private KeyCode switchRight = KeyCode.D;
     [SerializeField] private KeyCode switchLeft = KeyCode.A;
 
-    //[SerializeField] private GameObject[] _camera;
     [Header("Cameras")]
     [SerializeField] private List<GameObject> _cameras = new ();
 
@@ -16,9 +15,12 @@ public class CameraSwitch : MonoBehaviour
     private bool isCoolDown = false;
     private int currentCameraIndex;
 
+    CameraMovement cameraMovement;
+
     // Start is called before the first frame update
     private void Awake()
     {
+        //cameraMovement = GetComponentInChildren<CameraMovement>();
         FindCameras();
         UpdateCurrentCam();
     }
@@ -26,16 +28,20 @@ public class CameraSwitch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        cameraMovement = GetComponentInChildren<CameraMovement>();
+
         if (Input.GetKey(switchRight) && !isCoolDown)
         {
             SwitchToRight();
             StartCoroutine(CoolDown());
+            cameraMovement.staticEffect.SetActive(true);
         }
 
         if (Input.GetKey(switchLeft) && !isCoolDown)
         {
             SwitchToLeft();
             StartCoroutine(CoolDown());
+            cameraMovement.staticEffect.SetActive(true);
         }
     }
 

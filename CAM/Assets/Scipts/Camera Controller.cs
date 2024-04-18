@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
 public class CameraMovement : MonoBehaviour
 {
     public bool CanMove { get; private set; } = true;
+
+    public bool InActive = true;
 
 
     [Header("Functional Options")]                       //<<<----- Stuff like Headbobs, Zooming in, interact, crouch, Running, etc....
@@ -37,6 +40,8 @@ public class CameraMovement : MonoBehaviour
     private Camera playerCamera;
     private CharacterController characterController;
 
+    public GameObject staticEffect;
+
     private Vector3 moveDirection;
     private Vector2 currentInput;
 
@@ -44,6 +49,8 @@ public class CameraMovement : MonoBehaviour
 
     private float rotY = 0.0f;
     private float rotX = 0.0f;
+
+    [SerializeField] private float disableStaticIn = 0.2f;
 
     void Awake()
     {
@@ -71,6 +78,11 @@ public class CameraMovement : MonoBehaviour
             {
                 HandleZoom(); 
             }
+        }
+
+        if (this.gameObject.activeSelf)
+        {
+            StartCoroutine(DisableStatic());
         }
      
     }
@@ -165,5 +177,14 @@ public class CameraMovement : MonoBehaviour
 
         playerCamera.fieldOfView = targetFOV;
         zoomRoutine = null;
+    }
+
+    public IEnumerator DisableStatic()
+    {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(disableStaticIn);
+
+        // Disable the GameObject
+        staticEffect.SetActive(false);
     }
 }

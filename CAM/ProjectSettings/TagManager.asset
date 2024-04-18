@@ -9,6 +9,7 @@ TagManager:
   - Unlocks&Collectables
   - Essential
   - CheckPoint
+  - Sections
   layers:
   - Default
   - TransparentFX
