@@ -66,24 +66,24 @@
     <Compile Include="Assets\Scipts\Interactable Scripts\Interactable Puzzle.cs" />
     <Compile Include="Assets\Scipts\ChangeToLoreWindow.cs" />
     <Compile Include="Assets\Prefabs\Keypad\Scripts\Keypad.cs" />
-    <Compile Include="Assets\Destructible Column Asset\Scripts\ColumnVariableBreakScript.cs" />
     <Compile Include="Assets\Scipts\LevelUnlocked.cs" />
     <Compile Include="Assets\Scipts\AlanState.cs" />
+    <Compile Include="Assets\Prefabs\Destructible Column Asset\Scripts\ColumnBreakScript.cs" />
     <Compile Include="Assets\Prefabs\Keypad\Scripts\KeypadInteractionFPV.cs" />
     <Compile Include="Assets\Prefabs\Keypad\Scripts\SlidingDoor.cs" />
-    <Compile Include="Assets\Destructible Column Asset\Scripts\ColumnBreakScript.cs" />
+    <Compile Include="Assets\Prefabs\Destructible Column Asset\Scripts\ColumnVariableBreakScript.cs" />
     <Compile Include="Assets\Scipts\MouseCursor.cs" />
     <Compile Include="Assets\Scipts\CheckPoint.cs" />
     <Compile Include="Assets\Scipts\CameraSwitch.cs" />
     <Compile Include="Assets\Scipts\Interactable Scripts\Interractable.cs" />
     <Compile Include="Assets\Scipts\UniversalTrigger.cs" />
     <Compile Include="Assets\Scipts\Camera Controller.cs" />
-    <Compile Include="Assets\Destructible Column Asset\Scripts\DamageOutputScript.cs" />
+    <Compile Include="Assets\Prefabs\Destructible Column Asset\Scripts\DamageOutputScript.cs" />
     <Compile Include="Assets\Scipts\Interactable Scripts\InteractableComputer.cs" />
+    <Compile Include="Assets\Scipts\MainMenu.cs" />
     <Compile Include="Assets\Scipts\DontDestroy.cs" />
     <Compile Include="Assets\Scipts\Interactable Scripts\Collectable.cs" />
     <Compile Include="Assets\Scipts\Controller.cs" />
-    <Compile Include="Assets\MainMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Prefabs\Sci-fi Hologram Shader\Shaders\SciFiHologramShader.shader" />
@@ -92,7 +92,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\AdventureForge\CabinetsAndShelvesReadme.txt" />
+    <None Include="Assets\Prefabs\AdventureForge\CabinetsAndShelvesReadme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -108,7 +108,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\Destructible Column Asset\Version2_ReadMe.txt" />
+    <None Include="Assets\Prefabs\Destructible Column Asset\Version2_ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
