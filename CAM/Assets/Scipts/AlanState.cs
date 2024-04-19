@@ -18,7 +18,7 @@ public class AlanState : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        checkPointReach = GameObject.FindGameObjectWithTag("Sections").GetComponent<CheckPoint>();
+        //checkPointReach = GameObject.FindGameObjectWithTag("Sections").GetComponent<CheckPoint>();   <<<<<<<------------ REMOVE COMMENT LATER!
         m_Animator = GetComponent<Animator>();
         objectApperance = GetComponent<MeshRenderer>();
     }

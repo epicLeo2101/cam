@@ -234,7 +234,7 @@ GameObject:
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &11417090
 Transform:
   m_ObjectHideFlags: 0
@@ -390,6 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b862234a07b66f42b77cb439b0a19b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InActive: 1
   canInteract: 1
   canZoom: 1
   interactKey: 101
@@ -404,6 +405,7 @@ MonoBehaviour:
   interactionLayer:
     serializedVersion: 2
     m_Bits: 64
+  disableStaticIn: 0.2
 --- !u!143 &18356097
 CharacterController:
   m_ObjectHideFlags: 0
@@ -3020,7 +3022,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 2
   m_Height: 0.5
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -3349,6 +3351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b862234a07b66f42b77cb439b0a19b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InActive: 1
   canInteract: 1
   canZoom: 1
   interactKey: 101
@@ -3363,6 +3366,7 @@ MonoBehaviour:
   interactionLayer:
     serializedVersion: 2
     m_Bits: 64
+  disableStaticIn: 0.2
 --- !u!143 &835785643
 CharacterController:
   m_ObjectHideFlags: 0
@@ -5509,7 +5513,7 @@ Transform:
   m_GameObject: {fileID: 1034305897}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: 0.5, z: 7.5}
+  m_LocalPosition: {x: -5, y: 0.5, z: 8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8620,6 +8624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b862234a07b66f42b77cb439b0a19b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InActive: 1
   canInteract: 1
   canZoom: 1
   interactKey: 101
@@ -8634,6 +8639,7 @@ MonoBehaviour:
   interactionLayer:
     serializedVersion: 2
     m_Bits: 64
+  disableStaticIn: 0.2
 --- !u!143 &1649624880
 CharacterController:
   m_ObjectHideFlags: 0
@@ -9519,7 +9525,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1665153160
 MonoBehaviour:
   m_ObjectHideFlags: 0
