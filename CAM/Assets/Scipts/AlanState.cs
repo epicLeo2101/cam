@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class AlanState : MonoBehaviour
 {
     [Header("Controls")]                                
     [SerializeField] private KeyCode playVideoKey = KeyCode.Space;
+    [SerializeField] private bool checkPointYOrN = false;
 
     public float animationDuration = 1f; //<<<<---- just so the player does't spam the Space button however it may not be there for long.
 
@@ -18,7 +20,17 @@ public class AlanState : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //checkPointReach = GameObject.FindGameObjectWithTag("Sections").GetComponent<CheckPoint>();   <<<<<<<------------ REMOVE COMMENT LATER!
+        if (checkPointYOrN == true)
+        {
+            Debug.Log("Remember the Component 'CheckPoint' must have a tag with 'Sections'");
+            checkPointReach = GameObject.FindGameObjectWithTag("Sections").GetComponent<CheckPoint>();
+        }
+
+        else
+        {
+            Debug.Log("If there's a gameObject with tag named 'chekcpoint.' It will not work");
+        }
+
         m_Animator = GetComponent<Animator>();
         objectApperance = GetComponent<MeshRenderer>();
     }

@@ -40,7 +40,7 @@ public class CameraMovement : MonoBehaviour
     private Camera playerCamera;
     private CharacterController characterController;
 
-    //public GameObject staticEffect; <<<<<<<<<<<------- REMOVE THE COMMENT!!!!!! 
+    public GameObject staticEffect;
 
     private Vector3 moveDirection;
     private Vector2 currentInput;
@@ -54,6 +54,8 @@ public class CameraMovement : MonoBehaviour
 
     void Awake()
     {
+        Debug.Log("Remember each Camera must have the static effect infront of them, within the Security Camera and must be spelled 'Camera' and Static effect must be Spelled 'Static'");
+        staticEffect = transform.Find("Camera/Static").gameObject;
         playerCamera = GetComponentInChildren<Camera>();
         characterController = GetComponent<CharacterController>();
         defaultFOV = playerCamera.fieldOfView;
@@ -80,10 +82,10 @@ public class CameraMovement : MonoBehaviour
             }
         }
 
-        //if (this.gameObject.activeSelf) <<<<<<<<<<<------- REMOVE THE COMMENT!!!!!! 
-        //{
-        //    StartCoroutine(DisableStatic());
-        //}
+        if (this.gameObject.activeSelf)
+        {
+            StartCoroutine(DisableStatic());
+        }
 
     }
 
@@ -133,7 +135,6 @@ public class CameraMovement : MonoBehaviour
 
             //forces player body movement alongside the camera
             playerCamera.transform.localRotation = Quaternion.Euler(rotX, rotY, 0.0f);
-            //transform.rotation = localRotation; //This may be usefull plus "Quaternion localRotation" may need to replace the start of line 112
         }
     }
 
@@ -179,12 +180,12 @@ public class CameraMovement : MonoBehaviour
         zoomRoutine = null;
     }
 
-    //public IEnumerator DisableStatic()   <<<<<<<<<<<------- REMOVE THE COMMENT!!!!!! 
-    //{
-    //    // Wait for the specified delay
-    //    yield return new WaitForSeconds(disableStaticIn);
+    public IEnumerator DisableStatic()
+    {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(disableStaticIn);
 
-    //    // Disable the GameObject
-    //    staticEffect.SetActive(false);
-    //}
+    // Disable the GameObject
+    staticEffect.SetActive(false);
+    }
 }
