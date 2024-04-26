@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Controls")]                                 //<<<----- What inputs must be pressed to do what.
     [SerializeField] private KeyCode sprintKey = KeyCode.LeftShift;
     [SerializeField] private KeyCode interactKey = KeyCode.E;
+    [SerializeField] private KeyCode pauseKey = KeyCode.Escape;
 
     [Header("Movement Parameters")]
     [SerializeField] private float walkSpeed = 3.0f;
@@ -129,6 +130,11 @@ public class PlayerMovement : MonoBehaviour
         if (Input .GetKeyDown(interactKey) && currentInteractable != null && Physics.Raycast(playerCamera.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance, interactionLayer))
         {
             currentInteractable.OnInteract();
+        }
+
+        if (Input.GetKeyDown(pauseKey))
+        {
+
         }
     }
 
