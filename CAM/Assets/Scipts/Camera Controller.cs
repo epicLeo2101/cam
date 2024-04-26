@@ -1,3 +1,4 @@
+using Kino;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -40,7 +41,7 @@ public class CameraMovement : MonoBehaviour
     private Camera playerCamera;
     private CharacterController characterController;
 
-    public GameObject staticEffect;
+    public AnalogGlitch staticEffect;
 
     private Vector3 moveDirection;
     private Vector2 currentInput;
@@ -54,8 +55,7 @@ public class CameraMovement : MonoBehaviour
 
     void Awake()
     {
-        Debug.Log("Remember each Camera must have the static effect infront of them, within the Security Camera and must be spelled 'Camera' and Static effect must be Spelled 'Static'");
-        staticEffect = transform.Find("Camera/Static").gameObject;
+        staticEffect = GetComponentInChildren<AnalogGlitch>();
         playerCamera = GetComponentInChildren<Camera>();
         characterController = GetComponent<CharacterController>();
         defaultFOV = playerCamera.fieldOfView;
@@ -185,7 +185,7 @@ public class CameraMovement : MonoBehaviour
         // Wait for the specified delay
         yield return new WaitForSeconds(disableStaticIn);
 
-    // Disable the GameObject
-    staticEffect.SetActive(false);
+        // Disable the GameObject
+        staticEffect.enabled = false;
     }
 }

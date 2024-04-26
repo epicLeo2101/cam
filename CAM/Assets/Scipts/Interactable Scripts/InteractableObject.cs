@@ -8,17 +8,13 @@ public class InteractableObject : Interractable
     private bool Death = false;
 
     private MeshRenderer objectApperance;
-    private Light hoverLight;
 
     public GameObject Hologram;
 
     private void Start()
     {
-        hoverLight = GetComponentInChildren<Light>();
         objectApperance = GetComponent<MeshRenderer>();
 
-        //hoverLight.enabled = false;
-        //hologramApperance.enabled = false;
 
         if (this.tag == "Essential")
         {
@@ -42,7 +38,6 @@ public class InteractableObject : Interractable
         {
             GetComponent<Collider>().isTrigger = false;
             Hologram.SetActive(true);
-            //hoverLight.enabled = false;
         }
 
         //---------------------------------------------------------- The one above 'death is the only thing that will run. ----------------------------------------
@@ -51,7 +46,6 @@ public class InteractableObject : Interractable
         {
             GetComponent<Collider>().isTrigger = true;
             Hologram.SetActive(true);
-            //hoverLight.enabled = false;
         }
         if (objectApperance.enabled == true && Essential == true)
         {
@@ -62,11 +56,6 @@ public class InteractableObject : Interractable
 
     public override void OnFocus()
     {
-        if (objectApperance.enabled == false)
-        {
-            hoverLight.enabled = true;
-        }
-        //hoverLight.enabled = true;
         print("Looking at " + gameObject.name);
     }
 
@@ -79,11 +68,6 @@ public class InteractableObject : Interractable
 
     public override void OnLoseFocus()
     {
-        if (objectApperance.enabled == false)
-        {
-            hoverLight.enabled = false;
-        }
-        hoverLight.enabled = false;
         print("Stop looking at " + gameObject.name);
     }
 }

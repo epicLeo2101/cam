@@ -58,7 +58,9 @@
     <Analyzer Include="D:\Program Files\Unity 2022.3.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Prefabs\Sci-fi Hologram Shader\Scripts\Editor\SciFiHologramShaderGUI.cs" />
+    <Compile Include="Assets\Prefabs\Unity Store Assets\Kino\Glitch\Editor\AnalogGlitchEditor.cs" />
+    <Compile Include="Assets\Prefabs\Unity Store Assets\Sci-fi Hologram Shader\Scripts\Editor\SciFiHologramShaderGUI.cs" />
+    <Compile Include="Assets\Prefabs\Unity Store Assets\Kino\Glitch\Editor\DigitalGlitchEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.5\Lib\Editor\PlasticSCM\Localization\clientcommon.ja.txt" />

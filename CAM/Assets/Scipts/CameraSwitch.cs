@@ -33,14 +33,14 @@ public class CameraSwitch : MonoBehaviour
         {
             SwitchToRight();
             StartCoroutine(CoolDown());
-            cameraMovement.staticEffect.SetActive(true);
+            cameraMovement.staticEffect.enabled = true;
         }
 
         if (Input.GetKey(switchLeft) && !isCoolDown)
         {
             SwitchToLeft();
             StartCoroutine(CoolDown());
-            cameraMovement.staticEffect.SetActive(true); 
+            cameraMovement.staticEffect.enabled = true;
         }
     }
 
