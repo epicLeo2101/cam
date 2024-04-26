@@ -49,9 +49,13 @@ public class PlayerMovement : MonoBehaviour
 
     private Camera playerCamera;
     private CharacterController characterController;
+    private GameObject pauseMenu;
 
     private Vector3 moveDirection;
     private Vector2 currentInput;
+
+    private float coolDownTime = 1f;
+    private bool isCoolDown = false;
 
     private float rotationX = 0;
 
@@ -63,6 +67,8 @@ public class PlayerMovement : MonoBehaviour
         playerCamera = GetComponentInChildren<Camera>();
         characterController = GetComponent<CharacterController>();
         defaultYPos = playerCamera.transform.localPosition.y;
+        pauseMenu = GameObject.Find("Exit Panel");
+        pauseMenu.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -70,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
-        if (CanMove)
+        if (CanMove == true)
         {
             HandleMovementInput();
             HandleMouseLook();
@@ -88,7 +94,25 @@ public class PlayerMovement : MonoBehaviour
 
             ApplyFinalMovements();
         }
-     
+
+        if (Input.GetKeyDown(pauseKey) && !isCoolDown)
+        {
+            CanMove = false;
+            //Debug.Log("paused Game");
+            pauseMenu.SetActive(true);
+            Cursor.visible = true;
+            StartCoroutine(CoolDown());
+        }
+
+        if (Input.GetKeyDown(interactKey) && CanMove == false) //<<<<<<<<<<<<<<<<<<------------------  CAN'T HAVE 3 ANDS FIGURE A SOLUTION.
+        {
+            CanMove = true;
+            Debug.Log("Resume Game");
+            pauseMenu.SetActive(false);
+            Cursor.visible = false;
+            StartCoroutine(CoolDown());
+        }
+
     }
 
     private void HandleHeadbob()
@@ -131,11 +155,6 @@ public class PlayerMovement : MonoBehaviour
         {
             currentInteractable.OnInteract();
         }
-
-        if (Input.GetKeyDown(pauseKey))
-        {
-
-        }
     }
 
     //-----------------------------------------------------------------------
@@ -165,5 +184,17 @@ public class PlayerMovement : MonoBehaviour
 
         characterController.Move(moveDirection * Time.deltaTime);
         
+    }
+
+    private IEnumerator CoolDown()
+    {
+        isCoolDown = true;
+        yield return new WaitForSeconds(coolDownTime);
+        isCoolDown = false;
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
