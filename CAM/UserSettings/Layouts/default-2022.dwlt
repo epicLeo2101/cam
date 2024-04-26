@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 95
+  controlID: 168
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -524,9 +524,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 4ca70000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 50d7feff40d9feffecdafeff
+      m_ExpandedIDs: 26d4feff1ed9feffecdafeff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -893,9 +893,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 49.234707, y: 44.151894, z: -206.8176}
+    m_Target: {x: 69.87988, y: 22.898119, z: -4.5436206}
     speed: 2
-    m_Value: {x: 49.234707, y: 44.151894, z: -206.8176}
+    m_Value: {x: 69.879875, y: 22.898117, z: -4.54362}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -941,9 +941,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.043672785, y: -0.07966748, z: 0.0033460537, w: 0.9959239}
+    m_Target: {x: -0.07827871, y: 0.7274952, z: 0.08416719, w: 0.6765237}
     speed: 2
-    m_Value: {x: 0.043664888, y: -0.081156015, z: 0.003411338, w: 0.9957387}
+    m_Value: {x: -0.0795429, y: 0.72528297, z: 0.08501405, w: 0.67853534}
   m_Size:
     m_Target: 2.065503
     speed: 2
@@ -1087,7 +1087,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1095,16 +1095,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 49
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs
   m_LastFoldersGridSize: 49
   m_LastProjectPath: D:\Art, Projects, and Video\Games\[CAM]\cam\CAM
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: 6e060000
-    m_LastClickedID: 1646
-    m_ExpandedIDs: 00000000f2050000
+    m_SelectedIDs: 8a060000
+    m_LastClickedID: 1674
+    m_ExpandedIDs: 00000000f2050000a20600007e07000046090000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
