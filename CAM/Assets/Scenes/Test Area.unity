@@ -13527,7 +13527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7565307997325074252, guid: f550827cc7c546644b348c39803403be, type: 3}
       propertyPath: pauseKey
-      value: 32
+      value: 27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

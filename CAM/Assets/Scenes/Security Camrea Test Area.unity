@@ -4939,7 +4939,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   switchRight: 100
   switchLeft: 97
+  pauseKey: 27
   _cameras: []
+  pauseMenu: {fileID: 1095032196174079988}
 --- !u!1 &1327478415
 GameObject:
   m_ObjectHideFlags: 0
@@ -9706,6 +9708,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 848364469993707562, guid: 81e47d09de398f54fa46950ad7b6f4d2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2707723316935601118, guid: 81e47d09de398f54fa46950ad7b6f4d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5197386102180619623, guid: 81e47d09de398f54fa46950ad7b6f4d2, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -9795,6 +9805,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81e47d09de398f54fa46950ad7b6f4d2, type: 3}
+--- !u!1 &1095032196174079988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 848364469993707562, guid: 81e47d09de398f54fa46950ad7b6f4d2, type: 3}
+  m_PrefabInstance: {fileID: 1095032196174079987}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2398946733939662739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9846,6 +9861,10 @@ PrefabInstance:
     - target: {fileID: 1021026771638228107, guid: 60f8a1785e952494a9bb31db7d3ecdf5, type: 3}
       propertyPath: m_Name
       value: Collectable (Check child for note)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021026771638228107, guid: 60f8a1785e952494a9bb31db7d3ecdf5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10049,6 +10068,10 @@ PrefabInstance:
     - target: {fileID: 9151961505159960575, guid: 5d41e29249a5db943984a7d718568c87, type: 3}
       propertyPath: m_Name
       value: Win Condition
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151961505159960575, guid: 5d41e29249a5db943984a7d718568c87, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

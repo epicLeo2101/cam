@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 moveDirection;
     private Vector2 currentInput;
 
-    private float coolDownTime = 1f;
+    private float coolDownTime = 0.3f;
     private bool isCoolDown = false;
 
     private float rotationX = 0;
@@ -92,26 +92,29 @@ public class PlayerMovement : MonoBehaviour
                 HandleInteractionInput();
             }
 
+            if (Input.GetKeyDown(pauseKey) && !isCoolDown)
+            {
+                CanMove = false;
+                //Debug.Log("paused Game");
+                pauseMenu.SetActive(true);
+                Cursor.visible = true;
+                StartCoroutine(CoolDown());
+            }
+
             ApplyFinalMovements();
         }
-
-        if (Input.GetKeyDown(pauseKey) && !isCoolDown)
+        
+        if (CanMove == false)
         {
-            CanMove = false;
-            //Debug.Log("paused Game");
-            pauseMenu.SetActive(true);
-            Cursor.visible = true;
-            StartCoroutine(CoolDown());
-        }
-
-        if (Input.GetKeyDown(interactKey) && CanMove == false) //<<<<<<<<<<<<<<<<<<------------------  CAN'T HAVE 3 ANDS FIGURE A SOLUTION.
-        {
-            CanMove = true;
-            Debug.Log("Resume Game");
-            pauseMenu.SetActive(false);
-            Cursor.visible = false;
-            StartCoroutine(CoolDown());
-        }
+            if (Input.GetKeyDown(pauseKey) && !isCoolDown)
+            {
+                CanMove = true;
+                Debug.Log("Resume Game");
+                pauseMenu.SetActive(false);
+                Cursor.visible = false;
+                StartCoroutine(CoolDown());
+            }
+        }   
 
     }
 

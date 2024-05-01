@@ -7,21 +7,27 @@ public class CameraSwitch : MonoBehaviour
     [Header("Controls")]                                 //<<<----- What inputs must be pressed to do what.
     [SerializeField] private KeyCode switchRight = KeyCode.D;
     [SerializeField] private KeyCode switchLeft = KeyCode.A;
+    [SerializeField] private KeyCode pauseKey = KeyCode.Escape;
 
     [Header("Cameras")]
     [SerializeField] private List<GameObject> _cameras = new ();
 
     private float coolDownTime = 1f;
+    private float pauseCoolDownTime = 0.3f;
     private bool isCoolDown = false;
+    private bool CanMove = true;
     private int currentCameraIndex;
 
     CameraMovement cameraMovement;
+    public GameObject pauseMenu;
 
     // Start is called before the first frame update
     private void Awake()
     {
         FindCameras();
         UpdateCurrentCam();
+        pauseMenu.SetActive(false);
+        Debug.Log("Remember: All the 'Sections # (all Cameras)' must have the 'Exit Panels' in the 'Pasue Menu' or it will not work.");
     }
 
     // Update is called once per frame
@@ -29,18 +35,44 @@ public class CameraSwitch : MonoBehaviour
     {
         cameraMovement = GetComponentInChildren<CameraMovement>();
 
-        if (Input.GetKey(switchRight) && !isCoolDown)
+        if (CanMove)
         {
-            SwitchToRight();
-            StartCoroutine(CoolDown());
-            cameraMovement.staticEffect.enabled = true;
+            if (Input.GetKey(switchRight) && !isCoolDown)
+            {
+                SwitchToRight();
+                StartCoroutine(CoolDown());
+                cameraMovement.staticEffect.enabled = true;
+            }
+
+            if (Input.GetKey(switchLeft) && !isCoolDown)
+            {
+                SwitchToLeft();
+                StartCoroutine(CoolDown());
+                cameraMovement.staticEffect.enabled = true;
+            }
+
+            if (Input.GetKeyDown(pauseKey) && !isCoolDown)
+            {
+                CanMove = false;
+                cameraMovement.enabled = false;
+                //Debug.Log("paused Game");
+                pauseMenu.SetActive(true);
+                Cursor.visible = true;
+                StartCoroutine(PauseCoolDown());
+            }
         }
 
-        if (Input.GetKey(switchLeft) && !isCoolDown)
+        if (!CanMove)
         {
-            SwitchToLeft();
-            StartCoroutine(CoolDown());
-            cameraMovement.staticEffect.enabled = true;
+            if (Input.GetKeyDown(pauseKey) && !isCoolDown)
+            {
+                CanMove = true;
+                cameraMovement.enabled = true;
+                Debug.Log("Resume Game");
+                pauseMenu.SetActive(false);
+                Cursor.visible = false;
+                StartCoroutine(CoolDown());
+            }
         }
     }
 
@@ -91,5 +123,17 @@ public class CameraSwitch : MonoBehaviour
         isCoolDown = true;
         yield return new WaitForSeconds(coolDownTime);
         isCoolDown = false;
+    }
+
+    private IEnumerator PauseCoolDown()
+    {
+        isCoolDown = true;
+        yield return new WaitForSeconds(pauseCoolDownTime);
+        isCoolDown = false;
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
