@@ -40,6 +40,7 @@ public class CameraMovement : MonoBehaviour
 
     private Camera playerCamera;
     private CharacterController characterController;
+    private AudioListener audioListener;
 
     public AnalogGlitch staticEffect;
 
@@ -53,10 +54,14 @@ public class CameraMovement : MonoBehaviour
 
     [SerializeField] private float disableStaticIn = 0.2f;
 
+    AlanState alanState;
+
     void Awake()
     {
+        alanState = GameObject.FindGameObjectWithTag("Alan").GetComponent<AlanState>();
         staticEffect = GetComponentInChildren<AnalogGlitch>();
         playerCamera = GetComponentInChildren<Camera>();
+        audioListener = GetComponentInChildren<AudioListener>();
         characterController = GetComponent<CharacterController>();
         defaultFOV = playerCamera.fieldOfView;
         Cursor.lockState = CursorLockMode.Locked;
@@ -82,10 +87,23 @@ public class CameraMovement : MonoBehaviour
             }
         }
 
-        if (this.gameObject.activeSelf)
+        if (alanState.objectApperance.enabled == false)
         {
+            audioListener.enabled = true;
+            CanMove = true;
             StartCoroutine(DisableStatic());
         }
+        else
+        {
+            audioListener.enabled = false;
+            staticEffect.enabled = true;
+            CanMove = false;
+        }
+
+        //if (this.gameObject.activeSelf)    <<<<<<------- Keep this just in case || It activates when the gameObject is active.
+        //{
+        //    StartCoroutine(DisableStatic());
+        //}
 
     }
 
@@ -116,6 +134,20 @@ public class CameraMovement : MonoBehaviour
             currentInteractable.OnInteract();
         }
     }
+
+    //public void HandleAudioListener()
+    //{
+    //    if(alanState.objectApperance.enabled == false)
+    //    {
+    //        audioListener.enabled = true;
+    //        StartCoroutine(DisableStatic());
+    //    }
+    //    else
+    //    {
+    //        audioListener.enabled = false;
+    //        staticEffect.enabled = true;
+    //    }
+    //}
 
     //-----------------------------------------------------------------------
 
