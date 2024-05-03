@@ -6643,6 +6643,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5137583759382377391, guid: 73737f4759b7f054aba91ca6bc69a1c8, type: 3}
+      propertyPath: checkPointYOrN
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6239211822658793464, guid: 73737f4759b7f054aba91ca6bc69a1c8, type: 3}
       propertyPath: m_Name
       value: Alan
