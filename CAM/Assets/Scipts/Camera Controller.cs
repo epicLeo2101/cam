@@ -55,6 +55,7 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private float disableStaticIn = 0.2f;
 
     AlanState alanState;
+    public CameraSwitch cameraSwitch;
 
     void Awake()
     {
@@ -62,6 +63,7 @@ public class CameraMovement : MonoBehaviour
         staticEffect = GetComponentInChildren<AnalogGlitch>();
         playerCamera = GetComponentInChildren<Camera>();
         audioListener = GetComponentInChildren<AudioListener>();
+        cameraSwitch = GetComponentInParent<CameraSwitch>();
         characterController = GetComponent<CharacterController>();
         defaultFOV = playerCamera.fieldOfView;
         Cursor.lockState = CursorLockMode.Locked;
@@ -134,20 +136,6 @@ public class CameraMovement : MonoBehaviour
             currentInteractable.OnInteract();
         }
     }
-
-    //public void HandleAudioListener()
-    //{
-    //    if(alanState.objectApperance.enabled == false)
-    //    {
-    //        audioListener.enabled = true;
-    //        StartCoroutine(DisableStatic());
-    //    }
-    //    else
-    //    {
-    //        audioListener.enabled = false;
-    //        staticEffect.enabled = true;
-    //    }
-    //}
 
     //-----------------------------------------------------------------------
 

@@ -10,6 +10,9 @@ public class AlanState : MonoBehaviour
     [SerializeField] private KeyCode playVideoKey = KeyCode.Space;
     [SerializeField] private bool checkPointYOrN = false;
 
+    [Header("All death scenes")]
+    [SerializeField] private List<Animation> deathAnimations = new List<Animation>();
+
     public float animationDuration = 1f; //<<<<---- just so the player does't spam the Space button however it may not be there for long.
 
     private bool isCoolDown = false;

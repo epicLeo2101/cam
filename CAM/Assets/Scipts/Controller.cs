@@ -95,15 +95,16 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKeyDown(pauseKey) && !isCoolDown)
             {
                 CanMove = false;
-                //Debug.Log("paused Game");
+                Debug.Log("paused Game");
                 pauseMenu.SetActive(true);
+                Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
                 StartCoroutine(CoolDown());
             }
 
             ApplyFinalMovements();
         }
-        
+
         if (CanMove == false)
         {
             if (Input.GetKeyDown(pauseKey) && !isCoolDown)
@@ -111,10 +112,11 @@ public class PlayerMovement : MonoBehaviour
                 CanMove = true;
                 Debug.Log("Resume Game");
                 pauseMenu.SetActive(false);
+                Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 StartCoroutine(CoolDown());
             }
-        }   
+        }
 
     }
 
@@ -199,5 +201,15 @@ public class PlayerMovement : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void ResumeGaem()
+    {
+        CanMove = true;
+        Debug.Log("Resume Game");
+        pauseMenu.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        StartCoroutine(CoolDown());
     }
 }

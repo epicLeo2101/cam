@@ -57,6 +57,7 @@ public class CameraSwitch : MonoBehaviour
                 cameraMovement.enabled = false;
                 //Debug.Log("paused Game");
                 pauseMenu.SetActive(true);
+                Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
                 StartCoroutine(PauseCoolDown());
             }
@@ -70,6 +71,7 @@ public class CameraSwitch : MonoBehaviour
                 cameraMovement.enabled = true;
                 Debug.Log("Resume Game");
                 pauseMenu.SetActive(false);
+                Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 StartCoroutine(CoolDown());
             }
@@ -135,5 +137,15 @@ public class CameraSwitch : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void ResumeGame()
+    {
+        CanMove = true;
+        cameraMovement.enabled = true;
+        Debug.Log("Resume Game");
+        pauseMenu.SetActive(false);
+        Cursor.visible = false;
+        StartCoroutine(CoolDown());
     }
 }
