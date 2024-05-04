@@ -10,6 +10,9 @@ TagManager:
   - Essential
   - CheckPoint
   - Sections
+  - Damageable
+  - DeleteLater_1
+  - DeleteLater_2
   layers:
   - Default
   - TransparentFX

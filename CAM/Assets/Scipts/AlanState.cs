@@ -10,10 +10,8 @@ public class AlanState : MonoBehaviour
     [SerializeField] private KeyCode playVideoKey = KeyCode.Space;
     [SerializeField] private bool checkPointYOrN = false;
 
-    [Header("All death scenes")]
-    [SerializeField] private List<Animation> deathAnimations = new List<Animation>();
-
-    public float animationDuration = 1f; //<<<<---- just so the player does't spam the Space button however it may not be there for long.
+    //[Header("All death scenes")]
+    //[SerializeField] private List<Animation> deathAnimations = new List<Animation>(); //<<<<<------ WIP
 
     private bool isCoolDown = false;
     public MeshRenderer objectApperance;
@@ -24,6 +22,8 @@ public class AlanState : MonoBehaviour
 
 
     [SerializeField] private float disableStaticIn = 0.2f;
+    [SerializeField] private float animationDuration = 1f; //<<<<---- just so the player does't spam the Space button however it may not be there for long.
+    private float regainCollision = 0.3f; //<<<<<<------ Here so alan collision can be turn on but delete it later when it is improve, but it may stick who knows.
 
     CheckPoint checkPointReach;
 
@@ -67,12 +67,25 @@ public class AlanState : MonoBehaviour
 
     public void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.tag == "Death")
+        if (collider.gameObject.tag == "Death")  //<<<<<---- Plays Death Animation 1
         {
-            m_Animator.SetTrigger("Stop");
-            alanPOVCamera.SetActive(false);
-            objectApperance.enabled = false;
+            m_Animator.SetTrigger("Death_1");
+            GetComponent<Collider>().enabled = false;
+            ///alanPOVCamera.SetActive(false);  //<-- You may not need it but most likely it'll be useless now.
+            ///objectApperance.enabled = false;
             Debug.Log("Alan Died");
+        }
+
+        if (collider.gameObject.tag == "DeleteLater_1") //<<<<<---- Plays Death Animation 3
+        {
+            m_Animator.SetTrigger("Death_3");
+            GetComponent<Collider>().enabled = false;
+        }
+
+        if(collider.gameObject.tag == "DeleteLater_2")
+        {
+            m_Animator.SetTrigger("Death_4");
+            GetComponent<Collider>().enabled = false;
         }
 
         if (collider.gameObject.tag == "CheckPoint")
@@ -84,13 +97,22 @@ public class AlanState : MonoBehaviour
 
     public void OnTriggerExit(Collider collider)
     {
-        if (collider.gameObject.tag == "Essential")
+        if (collider.gameObject.tag == "Essential")  //<<<<<---- Plays Death Animation 2
         {
-            m_Animator.SetTrigger("Stop");
-            alanPOVCamera.SetActive(false);
-            objectApperance.enabled = false;
+            m_Animator.SetTrigger("Death_2");
+            GetComponent<Collider>().enabled = false;
+            //alanPOVCamera.SetActive(false);
+            //objectApperance.enabled = false;
             Debug.Log("Alan Died");
         }
+    }
+
+    public void StopAnimation()
+    {
+        m_Animator.SetTrigger("Stop");
+        alanPOVCamera.SetActive(false);
+        objectApperance.enabled = false;
+        StartCoroutine(RegainCollsionCoolDown());
     }
 
     private IEnumerator CoolDown()
@@ -98,6 +120,15 @@ public class AlanState : MonoBehaviour
         isCoolDown = true;
         yield return new WaitForSeconds(animationDuration);
         isCoolDown = false;
+    }
+
+    private IEnumerator RegainCollsionCoolDown()
+    {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(regainCollision);
+
+        // Enable Collision for Alan
+        GetComponent<Collider>().enabled = true;
     }
 
     public IEnumerator DisableStatic()

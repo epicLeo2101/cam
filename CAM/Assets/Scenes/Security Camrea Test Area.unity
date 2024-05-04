@@ -297,6 +297,7 @@ MonoBehaviour:
     m_Bits: 64
   staticEffect: {fileID: 0}
   disableStaticIn: 0.2
+  cameraSwitch: {fileID: 0}
 --- !u!143 &18356097
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1876,6 +1877,7 @@ MonoBehaviour:
     m_Bits: 64
   staticEffect: {fileID: 0}
   disableStaticIn: 0.2
+  cameraSwitch: {fileID: 0}
 --- !u!143 &835785643
 CharacterController:
   m_ObjectHideFlags: 0
@@ -6428,6 +6430,7 @@ MonoBehaviour:
     m_Bits: 64
   staticEffect: {fileID: 0}
   disableStaticIn: 0.2
+  cameraSwitch: {fileID: 0}
 --- !u!143 &1649624880
 CharacterController:
   m_ObjectHideFlags: 0
@@ -9176,6 +9179,30 @@ PrefabInstance:
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1658313161}
+    - target: {fileID: 5234296074426401163, guid: 20979f764857f154ebd32ce7eeaf2b99, type: 3}
+      propertyPath: m_TagString
+      value: Death
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863030131499920891, guid: 20979f764857f154ebd32ce7eeaf2b99, type: 3}
+      propertyPath: m_Center.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863030131499920891, guid: 20979f764857f154ebd32ce7eeaf2b99, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863030131499920891, guid: 20979f764857f154ebd32ce7eeaf2b99, type: 3}
+      propertyPath: m_Center.z
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7865780103323020577, guid: 20979f764857f154ebd32ce7eeaf2b99, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7865780103323020577, guid: 20979f764857f154ebd32ce7eeaf2b99, type: 3}
+      propertyPath: m_TagString
+      value: DeleteLater_2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9198,6 +9225,10 @@ PrefabInstance:
     - target: {fileID: 844540864536822426, guid: 1585cc1ce0c53e043a21917347a84a6c, type: 3}
       propertyPath: m_Name
       value: Object that needs to go
+      objectReference: {fileID: 0}
+    - target: {fileID: 844540864536822426, guid: 1585cc1ce0c53e043a21917347a84a6c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5992869561989623355, guid: 1585cc1ce0c53e043a21917347a84a6c, type: 3}
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
@@ -9467,6 +9498,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Door
       objectReference: {fileID: 0}
+    - target: {fileID: 1121352546760997344, guid: 34f4b058ae4e93c45aeb15b8aa7c757a, type: 3}
+      propertyPath: m_TagString
+      value: DeleteLater_1
+      objectReference: {fileID: 0}
     - target: {fileID: 2617696893563279398, guid: 34f4b058ae4e93c45aeb15b8aa7c757a, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -9532,13 +9567,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2344623185539646011, guid: 73737f4759b7f054aba91ca6bc69a1c8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660825972174876670, guid: 73737f4759b7f054aba91ca6bc69a1c8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6239211822658793464, guid: 73737f4759b7f054aba91ca6bc69a1c8, type: 3}
       propertyPath: m_Name
       value: Alan
       objectReference: {fileID: 0}
     - target: {fileID: 6352900183537611584, guid: 73737f4759b7f054aba91ca6bc69a1c8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.5
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 6352900183537611584, guid: 73737f4759b7f054aba91ca6bc69a1c8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9546,23 +9589,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6352900183537611584, guid: 73737f4759b7f054aba91ca6bc69a1c8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.5
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 6352900183537611584, guid: 73737f4759b7f054aba91ca6bc69a1c8, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99948364
       objectReference: {fileID: 0}
     - target: {fileID: 6352900183537611584, guid: 73737f4759b7f054aba91ca6bc69a1c8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6352900183537611584, guid: 73737f4759b7f054aba91ca6bc69a1c8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000014901159
+      value: 0.03213475
       objectReference: {fileID: 0}
     - target: {fileID: 6352900183537611584, guid: 73737f4759b7f054aba91ca6bc69a1c8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6352900183537611584, guid: 73737f4759b7f054aba91ca6bc69a1c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9570,7 +9613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6352900183537611584, guid: 73737f4759b7f054aba91ca6bc69a1c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 3.6830058
       objectReference: {fileID: 0}
     - target: {fileID: 6352900183537611584, guid: 73737f4759b7f054aba91ca6bc69a1c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -9632,6 +9675,10 @@ PrefabInstance:
     - target: {fileID: 3170562615995064376, guid: 204c57e7bdf880d49aa65c3250749579, type: 3}
       propertyPath: m_Name
       value: Object that needs to stay
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791761482184813463, guid: 204c57e7bdf880d49aa65c3250749579, type: 3}
+      propertyPath: m_Radius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5631224492665406659, guid: 204c57e7bdf880d49aa65c3250749579, type: 3}
       propertyPath: onTriggerExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
