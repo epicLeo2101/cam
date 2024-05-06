@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scipts\LevelUnlocked.cs" />
     <Compile Include="Assets\Scipts\AlanState.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\Kino\Glitch\DigitalGlitch.cs" />
+    <Compile Include="Assets\Prefabs\Unity Store Assets\LightningBolt\LightningBoltScript.cs" />
     <Compile Include="Assets\Scipts\MouseCursor.cs" />
     <Compile Include="Assets\Scipts\CheckPoint.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\Keypad\Scripts\KeypadInteractionFPV.cs" />
@@ -96,6 +97,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Prefabs\Unity Store Assets\AdventureForge\CabinetsAndShelvesReadme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Prefabs\Unity Store Assets\LightningBolt\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />

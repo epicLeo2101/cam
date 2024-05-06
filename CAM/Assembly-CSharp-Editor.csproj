@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\Prefabs\Unity Store Assets\Kino\Glitch\Editor\AnalogGlitchEditor.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\Sci-fi Hologram Shader\Scripts\Editor\SciFiHologramShaderGUI.cs" />
+    <Compile Include="Assets\Prefabs\Unity Store Assets\LightningBolt\Editor\LightningBoltEditor.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\Kino\Glitch\Editor\DigitalGlitchEditor.cs" />
   </ItemGroup>
   <ItemGroup>
