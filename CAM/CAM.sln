@@ -1,16 +1,37 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+<<<<<<< HEAD
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{1779FD84-D145-A671-9800-CF2067DD5C39}"
+EndProject
+>>>>>>> Making-It-Look-Pretty
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{D716466B-3742-56BD-3D3E-76503689CABD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{6E0F3CDE-1370-F369-DC3F-4AF4D86E81EF}"
 EndProject
+<<<<<<< HEAD
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{DCB4F963-F8AA-4397-75AD-D5593E70C955}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sc.terrain.painter.runtime", "sc.terrain.painter.runtime.csproj", "{F5F2EA6F-43FE-9C53-0C89-45BC1D205625}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sc.terrain.painter.editor", "sc.terrain.painter.editor.csproj", "{CDD3966F-792C-5D7F-5AE8-1D4A253B20D7}"
+EndProject
+>>>>>>> Making-It-Look-Pretty
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
+=======
+		{1779FD84-D145-A671-9800-CF2067DD5C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1779FD84-D145-A671-9800-CF2067DD5C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1779FD84-D145-A671-9800-CF2067DD5C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1779FD84-D145-A671-9800-CF2067DD5C39}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> Making-It-Look-Pretty
 		{D716466B-3742-56BD-3D3E-76503689CABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D716466B-3742-56BD-3D3E-76503689CABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D716466B-3742-56BD-3D3E-76503689CABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -19,6 +40,21 @@ Global
 		{6E0F3CDE-1370-F369-DC3F-4AF4D86E81EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E0F3CDE-1370-F369-DC3F-4AF4D86E81EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E0F3CDE-1370-F369-DC3F-4AF4D86E81EF}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
+=======
+		{DCB4F963-F8AA-4397-75AD-D5593E70C955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB4F963-F8AA-4397-75AD-D5593E70C955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB4F963-F8AA-4397-75AD-D5593E70C955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB4F963-F8AA-4397-75AD-D5593E70C955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5F2EA6F-43FE-9C53-0C89-45BC1D205625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F2EA6F-43FE-9C53-0C89-45BC1D205625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F2EA6F-43FE-9C53-0C89-45BC1D205625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F2EA6F-43FE-9C53-0C89-45BC1D205625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDD3966F-792C-5D7F-5AE8-1D4A253B20D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD3966F-792C-5D7F-5AE8-1D4A253B20D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD3966F-792C-5D7F-5AE8-1D4A253B20D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD3966F-792C-5D7F-5AE8-1D4A253B20D7}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> Making-It-Look-Pretty
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
