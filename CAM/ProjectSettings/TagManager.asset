@@ -13,6 +13,7 @@ TagManager:
   - Damageable
   - DeleteLater_1
   - DeleteLater_2
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - UI
   - Interactable
   - 
-  - 
+  - PostProcessing
   - 
   - 
   - 
