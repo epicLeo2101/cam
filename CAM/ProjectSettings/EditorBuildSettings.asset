@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Test Area.unity
-    guid: 3f4a4717afb800341a65d52fe623c783
+    path: Assets/Scenes/Menu.unity
+    guid: 3cee4a7c796f45b46a21c8d20e66c4e3
+  - enabled: 1
+    path: Assets/Scenes/ChinaTown.unity
+    guid: bf98e1046f557944e8e68107ccb20f9d
   - enabled: 1
     path: Assets/Scenes/Security Camrea Test Area.unity
     guid: 7954dc164774dd14cb6e39ba78f4c30b
+  - enabled: 1
+    path: Assets/Scenes/Test Area.unity
+    guid: 3f4a4717afb800341a65d52fe623c783
   m_configObjects: {}
