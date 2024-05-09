@@ -58,14 +58,14 @@
     <Analyzer Include="D:\Program Files\Unity 2022.3.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ProceduralTerrainPainter\Editor\PropertyDrawers.cs" />
-    <Compile Include="Assets\ProceduralTerrainPainter\Editor\TerrainPainterInspector.cs" />
-    <Compile Include="Assets\ProceduralTerrainPainter\Editor\HeatmapPreview.cs" />
-    <Compile Include="Assets\ProceduralTerrainPainter\Editor\ModifierEditor.cs" />
+    <Compile Include="Assets\_TerrainAutoUpgrade\ProceduralTerrainPainter\Editor\TerrainPainterInspector.cs" />
+    <Compile Include="Assets\_TerrainAutoUpgrade\ProceduralTerrainPainter\Editor\HeatmapPreview.cs" />
+    <Compile Include="Assets\_TerrainAutoUpgrade\ProceduralTerrainPainter\Editor\PropertyDrawers.cs" />
+    <Compile Include="Assets\_TerrainAutoUpgrade\ProceduralTerrainPainter\Editor\ModifierEditor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\ProceduralTerrainPainter\Editor\Heatmap.shader" />
-    <None Include="Assets\ProceduralTerrainPainter\Editor\sc.terrain.painter.editor.asmdef" />
+    <None Include="Assets\_TerrainAutoUpgrade\ProceduralTerrainPainter\Editor\Heatmap.shader" />
+    <None Include="Assets\_TerrainAutoUpgrade\ProceduralTerrainPainter\Editor\sc.terrain.painter.editor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

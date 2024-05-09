@@ -743,6 +743,10 @@
       <Project>{1D9E8A95-3638-6ECF-C91D-7E09418C0892}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
+    <ProjectReference Include="sc.terrain.painter.editor.csproj">
+      <Project>{CDD3966F-792C-5D7F-5AE8-1D4A253B20D7}</Project>
+      <Name>sc.terrain.painter.editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
       <Project>{D0B8DB40-E41B-3188-555E-466CC0CB2606}</Project>
       <Name>Unity.EditorCoroutines.Editor</Name>
@@ -811,10 +815,6 @@
       <Project>{2C629FE4-955D-91DF-E1BF-9A6F2EF2BAFE}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
-    <ProjectReference Include="sc.terrain.painter.runtime.csproj">
-      <Project>{F5F2EA6F-43FE-9C53-0C89-45BC1D205625}</Project>
-      <Name>sc.terrain.painter.runtime</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.ProBuilder.Editor.csproj">
       <Project>{D428D529-0A9F-FD3F-F33C-73B7EC594BC8}</Project>
       <Name>Unity.ProBuilder.Editor</Name>
@@ -867,9 +867,9 @@
       <Project>{2F7DCCF7-C698-A2E8-9E7E-7453EDCB42D4}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="sc.terrain.painter.editor.csproj">
-      <Project>{CDD3966F-792C-5D7F-5AE8-1D4A253B20D7}</Project>
-      <Name>sc.terrain.painter.editor</Name>
+    <ProjectReference Include="sc.terrain.painter.runtime.csproj">
+      <Project>{F5F2EA6F-43FE-9C53-0C89-45BC1D205625}</Project>
+      <Name>sc.terrain.painter.runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ProGrids.csproj">
       <Project>{2DCC15EF-BF99-29D3-3407-A63ADE911EE8}</Project>

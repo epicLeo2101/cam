@@ -32,12 +32,12 @@ public class InteractableObject : Interractable
         if (objectApperance.enabled == true && Death == true)
         {
             GetComponent<Collider>().isTrigger = true;
-            Hologram.SetActive(false);
+            //Hologram.SetActive(false);
         }
         if (objectApperance.enabled == false && Death == true)
         {
             GetComponent<Collider>().isTrigger = false;
-            Hologram.SetActive(true);
+            //Hologram.SetActive(true);
         }
 
         //---------------------------------------------------------- The one above 'death is the only thing that will run. ----------------------------------------
@@ -45,12 +45,12 @@ public class InteractableObject : Interractable
         if (objectApperance.enabled == false && Essential == true)
         {
             GetComponent<Collider>().isTrigger = true;
-            Hologram.SetActive(true);
+            //Hologram.SetActive(true);
         }
         if (objectApperance.enabled == true && Essential == true)
         {
             GetComponent<Collider>().isTrigger = false;
-            Hologram.SetActive(false);
+            //Hologram.SetActive(false);
         }
     }
 
@@ -62,6 +62,7 @@ public class InteractableObject : Interractable
     public override void OnInteract()
     {
         objectApperance.enabled = !objectApperance.enabled;
+        Hologram.SetActive(!Hologram.activeSelf);
         
         print("Interacted with " + gameObject.name);
     }

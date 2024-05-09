@@ -59,7 +59,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\TaaComponent.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\Script\ScrollUVWater.cs" />
     <Compile Include="Assets\Scipts\ChangeToMainWindow.cs" />
@@ -71,7 +70,6 @@
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\UserLutComponent.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\GrainModel.cs" />
@@ -84,8 +82,9 @@
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
     <Compile Include="Assets\Scipts\ChangeToLoreWindow.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+    <Compile Include="Assets\Prefabs\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
+    <Compile Include="Assets\Prefabs\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\VignetteComponent.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\Keypad\Scripts\Keypad.cs" />
     <Compile Include="Assets\Scipts\LevelUnlocked.cs" />
@@ -93,16 +92,17 @@
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\GrainComponent.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\Kino\Glitch\DigitalGlitch.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\LightningBolt\LightningBoltScript.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\PostProcessingComponent.cs" />
+    <Compile Include="Assets\Prefabs\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\UserLutModel.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
     <Compile Include="Assets\Scipts\MouseCursor.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
     <Compile Include="Assets\Prefabs\1\8K Skybox Pack Free\Example Scenes\Script\RotateCamera.cs" />
     <Compile Include="Assets\Scipts\CheckPoint.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
+    <Compile Include="Assets\Prefabs\SampleScenes\Scripts\LevelReset.cs" />
+    <Compile Include="Assets\Prefabs\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\Keypad\Scripts\KeypadInteractionFPV.cs" />
     <Compile Include="Assets\Scipts\CameraSwitch.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -117,6 +117,7 @@
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\DitheringModel.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+    <Compile Include="Assets\Prefabs\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
@@ -124,6 +125,7 @@
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\PostProcessingProfile.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\Keypad\Scripts\SlidingDoor.cs" />
+    <Compile Include="Assets\Prefabs\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\FogComponent.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\BloomComponent.cs" />
     <Compile Include="Assets\Scipts\Interactable Scripts\InteractableComputer.cs" />
@@ -139,9 +141,7 @@
     <Compile Include="Assets\Prefabs\1\DreamForestTree\Script\FreeCam.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\PostProcessingModel.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Prefabs\Unity Store Assets\Sci-fi Hologram Shader\Shaders\SciFiHologramShader.shader" />
@@ -159,7 +159,7 @@
     <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\LutGen.shader" />
     <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
     <None Include="Assets\Prefabs\1\8K Skybox Pack Free\ReadMe.txt" />
-    <None Include="Assets\ProceduralTerrainPainter\Shaders\Filters.hlsl" />
+    <None Include="Assets\_TerrainAutoUpgrade\ProceduralTerrainPainter\Shaders\Filters.hlsl" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\TAA.cginc" />
@@ -167,7 +167,7 @@
     <None Include="Assets\Prefabs\1\DreamForestTree\_URP patch\Install.txt" />
     <None Include="Assets\Prefabs\1\Cabin\Terrain\Sky by Heiko Irrgang\README.txt" />
     <None Include="Assets\Prefabs\Unity Store Assets\AdventureForge\CabinetsAndShelvesReadme.txt" />
-    <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
+    <None Include="Assets\Prefabs\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
@@ -189,7 +189,7 @@
     <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
     <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\FXAA.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\ProceduralTerrainPainter\_Demo\Textures\_LICENSE.txt" />
+    <None Include="Assets\_TerrainAutoUpgrade\ProceduralTerrainPainter\_Demo\Textures\_LICENSE.txt" />
     <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
@@ -211,7 +211,7 @@
     <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\TAA.shader" />
-    <None Include="Assets\ProceduralTerrainPainter\Shaders\Noise.hlsl" />
+    <None Include="Assets\_TerrainAutoUpgrade\ProceduralTerrainPainter\Shaders\Noise.hlsl" />
     <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\Blit.shader" />
     <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\Bloom.cginc" />
     <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
@@ -221,7 +221,7 @@
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\Prefabs\1\WaterTank\Shaders\NormalSpecGloss.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\ProceduralTerrainPainter\Shaders\Modifier.shader" />
+    <None Include="Assets\_TerrainAutoUpgrade\ProceduralTerrainPainter\Shaders\Modifier.shader" />
     <None Include="Assets\Prefabs\Unity Store Assets\Destructible Column Asset\Version2_ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
@@ -826,10 +826,6 @@
       <Project>{755BA6A8-0595-0274-37DE-F8FF680AEC6F}</Project>
       <Name>Unity.Timeline.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="sc.terrain.painter.runtime.Player.csproj">
-      <Project>{30AB6AF9-85F5-F846-C752-BF61A97D801B}</Project>
-      <Name>sc.terrain.painter.runtime.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
       <Project>{4699DE26-850A-EE97-AA7B-58D23CC08740}</Project>
       <Name>Unity.TextMeshPro.Player</Name>
@@ -837,6 +833,10 @@
     <ProjectReference Include="Unity.VisualScripting.State.Player.csproj">
       <Project>{6FA42845-61B6-1913-EA0F-4BA36387C821}</Project>
       <Name>Unity.VisualScripting.State.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="sc.terrain.painter.runtime.Player.csproj">
+      <Project>{30AB6AF9-85F5-F846-C752-BF61A97D801B}</Project>
+      <Name>sc.terrain.painter.runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ProGrids.Player.csproj">
       <Project>{9674B20E-6ABD-8477-9AFC-71F82C63A5CA}</Project>

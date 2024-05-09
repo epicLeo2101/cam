@@ -784,10 +784,6 @@
       <Project>{755BA6A8-0595-0274-37DE-F8FF680AEC6F}</Project>
       <Name>Unity.Timeline.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="sc.terrain.painter.runtime.Player.csproj">
-      <Project>{30AB6AF9-85F5-F846-C752-BF61A97D801B}</Project>
-      <Name>sc.terrain.painter.runtime.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
       <Project>{4699DE26-850A-EE97-AA7B-58D23CC08740}</Project>
       <Name>Unity.TextMeshPro.Player</Name>
@@ -795,6 +791,10 @@
     <ProjectReference Include="Unity.VisualScripting.State.Player.csproj">
       <Project>{6FA42845-61B6-1913-EA0F-4BA36387C821}</Project>
       <Name>Unity.VisualScripting.State.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="sc.terrain.painter.runtime.Player.csproj">
+      <Project>{30AB6AF9-85F5-F846-C752-BF61A97D801B}</Project>
+      <Name>sc.terrain.painter.runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ProGrids.Player.csproj">
       <Project>{9674B20E-6ABD-8477-9AFC-71F82C63A5CA}</Project>
