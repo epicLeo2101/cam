@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\Player\</OutputPath>
-    <DefineConstants>UNITY_2022_3_5;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2022_3_5;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;UNITY_POST_PROCESSING_STACK_V2;CROSS_PLATFORM_INPUT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -58,62 +58,170 @@
     <Analyzer Include="D:\Program Files\Unity 2022.3.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+    <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\TaaComponent.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\Script\ScrollUVWater.cs" />
     <Compile Include="Assets\Scipts\ChangeToMainWindow.cs" />
     <Compile Include="Assets\Scipts\Interactable Scripts\Interactable Physics.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+    <Compile Include="Assets\Prefabs\1\Props\Barrels\MetallicBarrels\Scene\MouseOrbit_MetallicBarrels.cs" />
     <Compile Include="Assets\Scipts\Interactable Scripts\InteractableObject.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\GrainModel.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\Kino\Glitch\AnalogGlitch.cs" />
     <Compile Include="Assets\Scipts\LoadNextLevel.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\Destructible Column Asset\Scripts\ColumnBreakScript.cs" />
     <Compile Include="Assets\Scipts\Interactable Scripts\Interactable Puzzle.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
     <Compile Include="Assets\Scipts\ChangeToLoreWindow.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+    <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\VignetteComponent.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\Keypad\Scripts\Keypad.cs" />
     <Compile Include="Assets\Scipts\LevelUnlocked.cs" />
     <Compile Include="Assets\Scipts\AlanState.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\GrainComponent.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\Kino\Glitch\DigitalGlitch.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\LightningBolt\LightningBoltScript.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\PostProcessingComponent.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\UserLutModel.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
     <Compile Include="Assets\Scipts\MouseCursor.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+    <Compile Include="Assets\Prefabs\1\8K Skybox Pack Free\Example Scenes\Script\RotateCamera.cs" />
     <Compile Include="Assets\Scipts\CheckPoint.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\Keypad\Scripts\KeypadInteractionFPV.cs" />
     <Compile Include="Assets\Scipts\CameraSwitch.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
     <Compile Include="Assets\Scipts\Interactable Scripts\Interractable.cs" />
     <Compile Include="Assets\Scipts\UniversalTrigger.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\Destructible Column Asset\Scripts\ColumnVariableBreakScript.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
     <Compile Include="Assets\Scipts\Camera Controller.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\Keypad\Scripts\KeypadButton.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\Destructible Column Asset\Scripts\DamageOutputScript.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\DitheringModel.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\PostProcessingProfile.cs" />
     <Compile Include="Assets\Prefabs\Unity Store Assets\Keypad\Scripts\SlidingDoor.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\FogComponent.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\BloomComponent.cs" />
     <Compile Include="Assets\Scipts\Interactable Scripts\InteractableComputer.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\PostProcessingContext.cs" />
     <Compile Include="Assets\Scipts\MainMenu.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\BloomModel.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\FogModel.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
     <Compile Include="Assets\Scipts\DontDestroy.cs" />
     <Compile Include="Assets\Scipts\Interactable Scripts\Collectable.cs" />
     <Compile Include="Assets\Scipts\Controller.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Models\VignetteModel.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\Script\FreeCam.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\PostProcessingModel.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+    <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
+    <Compile Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Prefabs\Unity Store Assets\Sci-fi Hologram Shader\Shaders\SciFiHologramShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\GrainGen.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\LutGen.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+    <None Include="Assets\Prefabs\1\8K Skybox Pack Free\ReadMe.txt" />
+    <None Include="Assets\ProceduralTerrainPainter\Shaders\Filters.hlsl" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\TAA.cginc" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\_URP patch\Install.txt" />
+    <None Include="Assets\Prefabs\1\Cabin\Terrain\Sky by Heiko Irrgang\README.txt" />
     <None Include="Assets\Prefabs\Unity Store Assets\AdventureForge\CabinetsAndShelvesReadme.txt" />
+    <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\ReadMe.txt" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
     <None Include="Assets\Prefabs\Unity Store Assets\LightningBolt\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\Prefabs\1\Cabin\Terrain\Sky by Heiko Irrgang\LICENSE.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\Prefabs\1\Cabin\Terrain\Textures by textures.com\README.txt" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\ACES.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\FXAA.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\ProceduralTerrainPainter\_Demo\Textures\_LICENSE.txt" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\Fog.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\MotionBlur.shader" />
     <None Include="Assets\Prefabs\Unity Store Assets\Kino\Glitch\Shader\DigitalGlitch.shader" />
     <None Include="Assets\Prefabs\Unity Store Assets\Kino\Glitch\Shader\AnalogGlitch.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Editor Resources\UI\Trackball.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\_HDRP patch\Install.txt" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\Common.cginc" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\Bloom.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\Uber.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\TAA.shader" />
+    <None Include="Assets\ProceduralTerrainPainter\Shaders\Noise.hlsl" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\Blit.shader" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\Bloom.cginc" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+    <None Include="Assets\Prefabs\1\DreamForestTree\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\Prefabs\1\WaterTank\Shaders\NormalSpecGloss.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\ProceduralTerrainPainter\Shaders\Modifier.shader" />
     <None Include="Assets\Prefabs\Unity Store Assets\Destructible Column Asset\Version2_ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
@@ -690,6 +798,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.Player.csproj">
+      <Project>{620C26CD-DFDE-F13F-FC34-7AAABB011626}</Project>
+      <Name>Assembly-CSharp-firstpass.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Runtime.Player.csproj">
+      <Project>{B68D853D-C14B-5B01-236A-8B3FB26122F4}</Project>
+      <Name>Unity.Postprocessing.Runtime.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.ProBuilder.Player.csproj">
       <Project>{5C510018-02F3-8B36-F047-806CEF02B514}</Project>
       <Name>Unity.ProBuilder.Player</Name>
@@ -709,6 +825,10 @@
     <ProjectReference Include="Unity.Timeline.Player.csproj">
       <Project>{755BA6A8-0595-0274-37DE-F8FF680AEC6F}</Project>
       <Name>Unity.Timeline.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="sc.terrain.painter.runtime.Player.csproj">
+      <Project>{30AB6AF9-85F5-F846-C752-BF61A97D801B}</Project>
+      <Name>sc.terrain.painter.runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
       <Project>{4699DE26-850A-EE97-AA7B-58D23CC08740}</Project>
