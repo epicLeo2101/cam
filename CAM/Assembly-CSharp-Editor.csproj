@@ -962,13 +962,13 @@
       <Project>{2C629FE4-955D-91DF-E1BF-9A6F2EF2BAFE}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.ProBuilder.Editor.csproj">
-      <Project>{D428D529-0A9F-FD3F-F33C-73B7EC594BC8}</Project>
-      <Name>Unity.ProBuilder.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj">
       <Project>{A6DAB51D-148C-5CEE-03D7-82A83AE2854A}</Project>
       <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.Editor.csproj">
+      <Project>{D428D529-0A9F-FD3F-F33C-73B7EC594BC8}</Project>
+      <Name>Unity.ProBuilder.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
       <Project>{DF982242-0004-4305-80ED-0968E0956E45}</Project>

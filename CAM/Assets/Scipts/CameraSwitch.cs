@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraSwitch : MonoBehaviour
 {
@@ -147,5 +148,11 @@ public class CameraSwitch : MonoBehaviour
         pauseMenu.SetActive(false);
         Cursor.visible = false;
         StartCoroutine(CoolDown());
+    }
+
+    public void ResetTheGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("Game Reset");
     }
 }
